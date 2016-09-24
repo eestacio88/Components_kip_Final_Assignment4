@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace HotelsManagement
 {
     public class InventoryType
@@ -15,7 +16,7 @@ namespace HotelsManagement
 
         public InventoryType() { }
 
-        public InventoryType(int hotelid, DateTime date, Room.BedType bedtype = Room.BedType.DOUBLE, int quantity = 0)
+        public InventoryType(int hotelid, DateTime date, Room.BedType bedtype = Room.BedType.DB, int quantity = 0)
         {
             this.Date = date.ToShortDateString();
             this.HotelId = hotelid;
