@@ -3,70 +3,62 @@
   <Hotel>
     <RoomList>
       <Room>
-        <BedSize>KING</BedSize>
+        <BedSize>KB</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>5</Capacity>
-        <Name>Single King Bed</Name>
       </Room>
       <Room>
-        <BedSize>QUEEN</BedSize>
+        <BedSize>QB</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>4</Capacity>
-        <Name>Single Queen Bed</Name>
       </Room>
       <Room>
-        <BedSize>DOUBLE</BedSize>
+        <BedSize>DB</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>2</Capacity>
-        <Name>Two Double Beds</Name>
       </Room>
       <Room>
-        <BedSize>SUITE</BedSize>
+        <BedSize>BS</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>6</Capacity>
-        <Name>One Bedroom Suite</Name>
       </Room>
     </RoomList>
     <ID>0</ID>
     <Name>Bronze Nebula Hotel &amp; Spa</Name>
     <Address>1600 N Lakeline Blvd #1726, Cedar Park, TX, 78613</Address>
     <Features>
-      <Laundry>true</Laundry>
+      <Laundry>false</Laundry>
       <AirConditioning>true</AirConditioning>
       <Shuttle>false</Shuttle>
       <Breakfast>false</Breakfast>
       <Distances>
-        <Beach>4.73</Beach>
-        <Shopping>1.98</Shopping>
-        <Airport>2.39</Airport>
+        <Beach>1.81</Beach>
+        <Shopping>2.86</Shopping>
+        <Airport>4.35</Airport>
       </Distances>
     </Features>
   </Hotel>
   <Hotel>
     <RoomList>
       <Room>
-        <BedSize>KING</BedSize>
+        <BedSize>KB</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>5</Capacity>
-        <Name>Single King Bed</Name>
       </Room>
       <Room>
-        <BedSize>QUEEN</BedSize>
+        <BedSize>QB</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>4</Capacity>
-        <Name>Single Queen Bed</Name>
       </Room>
       <Room>
-        <BedSize>DOUBLE</BedSize>
+        <BedSize>DB</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>2</Capacity>
-        <Name>Two Double Beds</Name>
       </Room>
       <Room>
-        <BedSize>SUITE</BedSize>
+        <BedSize>BS</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>6</Capacity>
-        <Name>One Bedroom Suite</Name>
       </Room>
     </RoomList>
     <ID>1</ID>
@@ -75,82 +67,74 @@
     <Features>
       <Laundry>true</Laundry>
       <AirConditioning>true</AirConditioning>
-      <Shuttle>true</Shuttle>
+      <Shuttle>false</Shuttle>
       <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>0.75</Beach>
-        <Shopping>2.15</Shopping>
-        <Airport>1.38</Airport>
+        <Beach>4.18</Beach>
+        <Shopping>1.93</Shopping>
+        <Airport>1.45</Airport>
       </Distances>
     </Features>
   </Hotel>
   <Hotel>
     <RoomList>
       <Room>
-        <BedSize>KING</BedSize>
+        <BedSize>KB</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>5</Capacity>
-        <Name>Single King Bed</Name>
       </Room>
       <Room>
-        <BedSize>QUEEN</BedSize>
+        <BedSize>QB</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>4</Capacity>
-        <Name>Single Queen Bed</Name>
       </Room>
       <Room>
-        <BedSize>DOUBLE</BedSize>
+        <BedSize>DB</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>2</Capacity>
-        <Name>Two Double Beds</Name>
       </Room>
       <Room>
-        <BedSize>SUITE</BedSize>
+        <BedSize>BS</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>6</Capacity>
-        <Name>One Bedroom Suite</Name>
       </Room>
     </RoomList>
     <ID>2</ID>
     <Name>Golden Grove Resort</Name>
     <Address>3583 Bayview Ave, Saint James City, FL, 33956</Address>
     <Features>
-      <Laundry>true</Laundry>
+      <Laundry>false</Laundry>
       <AirConditioning>true</AirConditioning>
-      <Shuttle>true</Shuttle>
-      <Breakfast>true</Breakfast>
+      <Shuttle>false</Shuttle>
+      <Breakfast>false</Breakfast>
       <Distances>
-        <Beach>3.82</Beach>
-        <Shopping>1.51</Shopping>
-        <Airport>4.34</Airport>
+        <Beach>2.14</Beach>
+        <Shopping>0.27</Shopping>
+        <Airport>2.51</Airport>
       </Distances>
     </Features>
   </Hotel>
   <Hotel>
     <RoomList>
       <Room>
-        <BedSize>KING</BedSize>
+        <BedSize>KB</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>5</Capacity>
-        <Name>Single King Bed</Name>
       </Room>
       <Room>
-        <BedSize>QUEEN</BedSize>
+        <BedSize>QB</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>4</Capacity>
-        <Name>Single Queen Bed</Name>
       </Room>
       <Room>
-        <BedSize>DOUBLE</BedSize>
+        <BedSize>DB</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>2</Capacity>
-        <Name>Two Double Beds</Name>
       </Room>
       <Room>
-        <BedSize>SUITE</BedSize>
+        <BedSize>BS</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>6</Capacity>
-        <Name>One Bedroom Suite</Name>
       </Room>
     </RoomList>
     <ID>3</ID>
@@ -158,54 +142,50 @@
     <Address>168 Jones Chapel Shiloh Rd, Danielsville, GA, 30633</Address>
     <Features>
       <Laundry>true</Laundry>
-      <AirConditioning>false</AirConditioning>
+      <AirConditioning>true</AirConditioning>
       <Shuttle>true</Shuttle>
       <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>0.22</Beach>
-        <Shopping>3.63</Shopping>
-        <Airport>2.53</Airport>
+        <Beach>0.3</Beach>
+        <Shopping>4.63</Shopping>
+        <Airport>2.15</Airport>
       </Distances>
     </Features>
   </Hotel>
   <Hotel>
     <RoomList>
       <Room>
-        <BedSize>KING</BedSize>
+        <BedSize>KB</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>5</Capacity>
-        <Name>Single King Bed</Name>
       </Room>
       <Room>
-        <BedSize>QUEEN</BedSize>
+        <BedSize>QB</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>4</Capacity>
-        <Name>Single Queen Bed</Name>
       </Room>
       <Room>
-        <BedSize>DOUBLE</BedSize>
+        <BedSize>DB</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>2</Capacity>
-        <Name>Two Double Beds</Name>
       </Room>
       <Room>
-        <BedSize>SUITE</BedSize>
+        <BedSize>BS</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>6</Capacity>
-        <Name>One Bedroom Suite</Name>
       </Room>
     </RoomList>
     <ID>4</ID>
     <Name>Mellow Bay Resorts</Name>
     <Address>3 Elm Pvt Dr, Somerville, AL, 35670</Address>
     <Features>
-      <Laundry>false</Laundry>
+      <Laundry>true</Laundry>
       <AirConditioning>false</AirConditioning>
       <Shuttle>true</Shuttle>
       <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>3.14</Beach>
-        <Shopping>1.38</Shopping>
+        <Beach>1.97</Beach>
+        <Shopping>4.77</Shopping>
         <Airport>2.5</Airport>
       </Distances>
     </Features>
@@ -213,28 +193,24 @@
   <Hotel>
     <RoomList>
       <Room>
-        <BedSize>KING</BedSize>
+        <BedSize>KB</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>5</Capacity>
-        <Name>Single King Bed</Name>
       </Room>
       <Room>
-        <BedSize>QUEEN</BedSize>
+        <BedSize>QB</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>4</Capacity>
-        <Name>Single Queen Bed</Name>
       </Room>
       <Room>
-        <BedSize>DOUBLE</BedSize>
+        <BedSize>DB</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>2</Capacity>
-        <Name>Two Double Beds</Name>
       </Room>
       <Room>
-        <BedSize>SUITE</BedSize>
+        <BedSize>BS</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>6</Capacity>
-        <Name>One Bedroom Suite</Name>
       </Room>
     </RoomList>
     <ID>5</ID>
@@ -242,181 +218,165 @@
     <Address>1205 S Hitchite Ave, Wewoka, OK, 74884</Address>
     <Features>
       <Laundry>true</Laundry>
-      <AirConditioning>false</AirConditioning>
+      <AirConditioning>true</AirConditioning>
       <Shuttle>true</Shuttle>
-      <Breakfast>false</Breakfast>
+      <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>4.29</Beach>
-        <Shopping>4.22</Shopping>
-        <Airport>4.01</Airport>
+        <Beach>4.4</Beach>
+        <Shopping>3.79</Shopping>
+        <Airport>0.44</Airport>
       </Distances>
     </Features>
   </Hotel>
   <Hotel>
     <RoomList>
       <Room>
-        <BedSize>KING</BedSize>
+        <BedSize>KB</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>5</Capacity>
-        <Name>Single King Bed</Name>
       </Room>
       <Room>
-        <BedSize>QUEEN</BedSize>
+        <BedSize>QB</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>4</Capacity>
-        <Name>Single Queen Bed</Name>
       </Room>
       <Room>
-        <BedSize>DOUBLE</BedSize>
+        <BedSize>DB</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>2</Capacity>
-        <Name>Two Double Beds</Name>
       </Room>
       <Room>
-        <BedSize>SUITE</BedSize>
+        <BedSize>BS</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>6</Capacity>
-        <Name>One Bedroom Suite</Name>
       </Room>
     </RoomList>
     <ID>6</ID>
     <Name>Emerald Hotel</Name>
     <Address>1015 W Sam Houston St, Pharr, TX, 78557</Address>
     <Features>
-      <Laundry>false</Laundry>
-      <AirConditioning>false</AirConditioning>
-      <Shuttle>false</Shuttle>
-      <Breakfast>true</Breakfast>
+      <Laundry>true</Laundry>
+      <AirConditioning>true</AirConditioning>
+      <Shuttle>true</Shuttle>
+      <Breakfast>false</Breakfast>
       <Distances>
-        <Beach>1.1</Beach>
-        <Shopping>1.58</Shopping>
-        <Airport>2.95</Airport>
+        <Beach>3.39</Beach>
+        <Shopping>2.33</Shopping>
+        <Airport>4.94</Airport>
       </Distances>
     </Features>
   </Hotel>
   <Hotel>
     <RoomList>
       <Room>
-        <BedSize>KING</BedSize>
+        <BedSize>KB</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>5</Capacity>
-        <Name>Single King Bed</Name>
       </Room>
       <Room>
-        <BedSize>QUEEN</BedSize>
+        <BedSize>QB</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>4</Capacity>
-        <Name>Single Queen Bed</Name>
       </Room>
       <Room>
-        <BedSize>DOUBLE</BedSize>
+        <BedSize>DB</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>2</Capacity>
-        <Name>Two Double Beds</Name>
       </Room>
       <Room>
-        <BedSize>SUITE</BedSize>
+        <BedSize>BS</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>6</Capacity>
-        <Name>One Bedroom Suite</Name>
       </Room>
     </RoomList>
     <ID>7</ID>
     <Name>Ocean Hotel</Name>
     <Address>270 Cherokee Dr, Saulsbury, TN, 38067</Address>
     <Features>
-      <Laundry>true</Laundry>
-      <AirConditioning>true</AirConditioning>
-      <Shuttle>true</Shuttle>
-      <Breakfast>true</Breakfast>
+      <Laundry>false</Laundry>
+      <AirConditioning>false</AirConditioning>
+      <Shuttle>false</Shuttle>
+      <Breakfast>false</Breakfast>
       <Distances>
-        <Beach>0.72</Beach>
-        <Shopping>0.3</Shopping>
-        <Airport>0.37</Airport>
+        <Beach>3.76</Beach>
+        <Shopping>2.24</Shopping>
+        <Airport>3.07</Airport>
       </Distances>
     </Features>
   </Hotel>
   <Hotel>
     <RoomList>
       <Room>
-        <BedSize>KING</BedSize>
+        <BedSize>KB</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>5</Capacity>
-        <Name>Single King Bed</Name>
       </Room>
       <Room>
-        <BedSize>QUEEN</BedSize>
+        <BedSize>QB</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>4</Capacity>
-        <Name>Single Queen Bed</Name>
       </Room>
       <Room>
-        <BedSize>DOUBLE</BedSize>
+        <BedSize>DB</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>2</Capacity>
-        <Name>Two Double Beds</Name>
       </Room>
       <Room>
-        <BedSize>SUITE</BedSize>
+        <BedSize>BS</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>6</Capacity>
-        <Name>One Bedroom Suite</Name>
       </Room>
     </RoomList>
     <ID>8</ID>
     <Name>Seven Seas Resort</Name>
     <Address>163 Ems C31 Ln, Warsaw, IN, 46582</Address>
     <Features>
-      <Laundry>false</Laundry>
+      <Laundry>true</Laundry>
       <AirConditioning>true</AirConditioning>
       <Shuttle>false</Shuttle>
-      <Breakfast>false</Breakfast>
+      <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>3.35</Beach>
-        <Shopping>1.18</Shopping>
-        <Airport>4.5</Airport>
+        <Beach>3.23</Beach>
+        <Shopping>4.33</Shopping>
+        <Airport>1.5</Airport>
       </Distances>
     </Features>
   </Hotel>
   <Hotel>
     <RoomList>
       <Room>
-        <BedSize>KING</BedSize>
+        <BedSize>KB</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>5</Capacity>
-        <Name>Single King Bed</Name>
       </Room>
       <Room>
-        <BedSize>QUEEN</BedSize>
+        <BedSize>QB</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>4</Capacity>
-        <Name>Single Queen Bed</Name>
       </Room>
       <Room>
-        <BedSize>DOUBLE</BedSize>
+        <BedSize>DB</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>2</Capacity>
-        <Name>Two Double Beds</Name>
       </Room>
       <Room>
-        <BedSize>SUITE</BedSize>
+        <BedSize>BS</BedSize>
         <DailyRate>0</DailyRate>
         <Capacity>6</Capacity>
-        <Name>One Bedroom Suite</Name>
       </Room>
     </RoomList>
     <ID>9</ID>
     <Name>Stratosphere Hotel &amp; Spa</Name>
     <Address>8454 Wright St, Fort Campbell, KY, 42223</Address>
     <Features>
-      <Laundry>false</Laundry>
-      <AirConditioning>true</AirConditioning>
-      <Shuttle>true</Shuttle>
+      <Laundry>true</Laundry>
+      <AirConditioning>false</AirConditioning>
+      <Shuttle>false</Shuttle>
       <Breakfast>false</Breakfast>
       <Distances>
-        <Beach>0.77</Beach>
-        <Shopping>0.6</Shopping>
-        <Airport>2.61</Airport>
+        <Beach>2.16</Beach>
+        <Shopping>0.91</Shopping>
+        <Airport>2.21</Airport>
       </Distances>
     </Features>
   </Hotel>

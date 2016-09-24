@@ -35,7 +35,7 @@ namespace HotelsManagement
                 path = this.defaultPath;
             }
 
-            Console.WriteLine(typeof(T));
+            //Console.WriteLine(path);
 
             if (list != null)
             {
@@ -61,6 +61,7 @@ namespace HotelsManagement
                 StreamReader xmlStream = new StreamReader(filePath);
                 this.xmlWriter = new XmlSerializer(list.GetType());           
                 result = "File read operation successful!";
+                //xmlStream.Close();
                 return (List<T>)this.xmlWriter.Deserialize(xmlStream);
             }
             catch(Exception error)
