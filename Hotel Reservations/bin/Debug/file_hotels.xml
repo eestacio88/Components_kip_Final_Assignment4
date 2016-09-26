@@ -4,22 +4,22 @@
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>142</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>159</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>133</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>116</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -28,13 +28,13 @@
     <Address>1600 N Lakeline Blvd #1726, Cedar Park, TX, 78613</Address>
     <Features>
       <Laundry>true</Laundry>
-      <AirConditioning>true</AirConditioning>
+      <AirConditioning>false</AirConditioning>
       <Shuttle>true</Shuttle>
-      <Breakfast>true</Breakfast>
+      <Breakfast>false</Breakfast>
       <Distances>
-        <Beach>0.57</Beach>
-        <Shopping>3.93</Shopping>
-        <Airport>0.49</Airport>
+        <Beach>0.27</Beach>
+        <Shopping>2.5</Shopping>
+        <Airport>4.21</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -42,22 +42,22 @@
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>111</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>131</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>169</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>186</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -67,12 +67,12 @@
     <Features>
       <Laundry>true</Laundry>
       <AirConditioning>true</AirConditioning>
-      <Shuttle>false</Shuttle>
+      <Shuttle>true</Shuttle>
       <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>4.23</Beach>
-        <Shopping>3.75</Shopping>
-        <Airport>3.01</Airport>
+        <Beach>3.28</Beach>
+        <Shopping>0.73</Shopping>
+        <Airport>3.38</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -80,22 +80,22 @@
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>117</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>135</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>153</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>179</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -103,14 +103,14 @@
     <Name>Golden Grove Resort</Name>
     <Address>3583 Bayview Ave, Saint James City, FL, 33956</Address>
     <Features>
-      <Laundry>false</Laundry>
-      <AirConditioning>true</AirConditioning>
-      <Shuttle>false</Shuttle>
-      <Breakfast>true</Breakfast>
+      <Laundry>true</Laundry>
+      <AirConditioning>false</AirConditioning>
+      <Shuttle>true</Shuttle>
+      <Breakfast>false</Breakfast>
       <Distances>
-        <Beach>0.31</Beach>
-        <Shopping>4.42</Shopping>
-        <Airport>3.96</Airport>
+        <Beach>4.23</Beach>
+        <Shopping>0.81</Shopping>
+        <Airport>0.78</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -118,22 +118,22 @@
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>186</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>102</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>173</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>144</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -146,9 +146,9 @@
       <Shuttle>true</Shuttle>
       <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>1.71</Beach>
-        <Shopping>3.9</Shopping>
-        <Airport>2.97</Airport>
+        <Beach>0.58</Beach>
+        <Shopping>0.18</Shopping>
+        <Airport>2.39</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -156,22 +156,22 @@
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>126</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>162</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>150</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>129</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -182,11 +182,11 @@
       <Laundry>false</Laundry>
       <AirConditioning>false</AirConditioning>
       <Shuttle>true</Shuttle>
-      <Breakfast>true</Breakfast>
+      <Breakfast>false</Breakfast>
       <Distances>
-        <Beach>2.81</Beach>
-        <Shopping>1.77</Shopping>
-        <Airport>0.09</Airport>
+        <Beach>1.59</Beach>
+        <Shopping>0.65</Shopping>
+        <Airport>3.64</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -194,22 +194,22 @@
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>127</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>141</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>189</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>154</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -219,12 +219,12 @@
     <Features>
       <Laundry>true</Laundry>
       <AirConditioning>true</AirConditioning>
-      <Shuttle>true</Shuttle>
-      <Breakfast>true</Breakfast>
+      <Shuttle>false</Shuttle>
+      <Breakfast>false</Breakfast>
       <Distances>
-        <Beach>3.56</Beach>
-        <Shopping>2.56</Shopping>
-        <Airport>4.44</Airport>
+        <Beach>4.49</Beach>
+        <Shopping>3.27</Shopping>
+        <Airport>0.43</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -232,22 +232,22 @@
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>108</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>135</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>166</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>113</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -255,14 +255,14 @@
     <Name>Emerald Hotel</Name>
     <Address>1015 W Sam Houston St, Pharr, TX, 78557</Address>
     <Features>
-      <Laundry>false</Laundry>
-      <AirConditioning>false</AirConditioning>
+      <Laundry>true</Laundry>
+      <AirConditioning>true</AirConditioning>
       <Shuttle>false</Shuttle>
       <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>3.33</Beach>
-        <Shopping>4.04</Shopping>
-        <Airport>2.87</Airport>
+        <Beach>0.89</Beach>
+        <Shopping>0.15</Shopping>
+        <Airport>1.36</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -270,22 +270,22 @@
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>105</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>108</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>181</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>128</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -296,11 +296,11 @@
       <Laundry>false</Laundry>
       <AirConditioning>false</AirConditioning>
       <Shuttle>true</Shuttle>
-      <Breakfast>true</Breakfast>
+      <Breakfast>false</Breakfast>
       <Distances>
-        <Beach>4.97</Beach>
-        <Shopping>3.54</Shopping>
-        <Airport>1.01</Airport>
+        <Beach>0.59</Beach>
+        <Shopping>4.23</Shopping>
+        <Airport>1.47</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -308,22 +308,22 @@
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>126</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>166</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>131</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>146</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -331,14 +331,14 @@
     <Name>Seven Seas Resort</Name>
     <Address>163 Ems C31 Ln, Warsaw, IN, 46582</Address>
     <Features>
-      <Laundry>true</Laundry>
-      <AirConditioning>true</AirConditioning>
+      <Laundry>false</Laundry>
+      <AirConditioning>false</AirConditioning>
       <Shuttle>false</Shuttle>
-      <Breakfast>false</Breakfast>
+      <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>0.03</Beach>
-        <Shopping>3.15</Shopping>
-        <Airport>3.86</Airport>
+        <Beach>0.15</Beach>
+        <Shopping>0.69</Shopping>
+        <Airport>3.78</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -346,22 +346,22 @@
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>124</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>154</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>115</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>0</DailyRate>
+        <DailyRate>153</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -371,12 +371,12 @@
     <Features>
       <Laundry>true</Laundry>
       <AirConditioning>false</AirConditioning>
-      <Shuttle>false</Shuttle>
+      <Shuttle>true</Shuttle>
       <Breakfast>false</Breakfast>
       <Distances>
-        <Beach>1.98</Beach>
-        <Shopping>3.84</Shopping>
-        <Airport>1.42</Airport>
+        <Beach>0.23</Beach>
+        <Shopping>4.76</Shopping>
+        <Airport>3.35</Airport>
       </Distances>
     </Features>
   </Hotel>
