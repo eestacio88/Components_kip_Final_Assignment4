@@ -27,14 +27,14 @@
     <Name>Bronze Nebula Hotel &amp; Spa</Name>
     <Address>1600 N Lakeline Blvd #1726, Cedar Park, TX, 78613</Address>
     <Features>
-      <Laundry>false</Laundry>
+      <Laundry>true</Laundry>
       <AirConditioning>true</AirConditioning>
-      <Shuttle>false</Shuttle>
-      <Breakfast>false</Breakfast>
+      <Shuttle>true</Shuttle>
+      <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>1.81</Beach>
-        <Shopping>2.86</Shopping>
-        <Airport>4.35</Airport>
+        <Beach>0.57</Beach>
+        <Shopping>3.93</Shopping>
+        <Airport>0.49</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -70,9 +70,9 @@
       <Shuttle>false</Shuttle>
       <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>4.18</Beach>
-        <Shopping>1.93</Shopping>
-        <Airport>1.45</Airport>
+        <Beach>4.23</Beach>
+        <Shopping>3.75</Shopping>
+        <Airport>3.01</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -106,11 +106,11 @@
       <Laundry>false</Laundry>
       <AirConditioning>true</AirConditioning>
       <Shuttle>false</Shuttle>
-      <Breakfast>false</Breakfast>
+      <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>2.14</Beach>
-        <Shopping>0.27</Shopping>
-        <Airport>2.51</Airport>
+        <Beach>0.31</Beach>
+        <Shopping>4.42</Shopping>
+        <Airport>3.96</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -146,9 +146,9 @@
       <Shuttle>true</Shuttle>
       <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>0.3</Beach>
-        <Shopping>4.63</Shopping>
-        <Airport>2.15</Airport>
+        <Beach>1.71</Beach>
+        <Shopping>3.9</Shopping>
+        <Airport>2.97</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -179,14 +179,14 @@
     <Name>Mellow Bay Resorts</Name>
     <Address>3 Elm Pvt Dr, Somerville, AL, 35670</Address>
     <Features>
-      <Laundry>true</Laundry>
+      <Laundry>false</Laundry>
       <AirConditioning>false</AirConditioning>
       <Shuttle>true</Shuttle>
       <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>1.97</Beach>
-        <Shopping>4.77</Shopping>
-        <Airport>2.5</Airport>
+        <Beach>2.81</Beach>
+        <Shopping>1.77</Shopping>
+        <Airport>0.09</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -222,9 +222,9 @@
       <Shuttle>true</Shuttle>
       <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>4.4</Beach>
-        <Shopping>3.79</Shopping>
-        <Airport>0.44</Airport>
+        <Beach>3.56</Beach>
+        <Shopping>2.56</Shopping>
+        <Airport>4.44</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -255,14 +255,14 @@
     <Name>Emerald Hotel</Name>
     <Address>1015 W Sam Houston St, Pharr, TX, 78557</Address>
     <Features>
-      <Laundry>true</Laundry>
-      <AirConditioning>true</AirConditioning>
-      <Shuttle>true</Shuttle>
-      <Breakfast>false</Breakfast>
+      <Laundry>false</Laundry>
+      <AirConditioning>false</AirConditioning>
+      <Shuttle>false</Shuttle>
+      <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>3.39</Beach>
-        <Shopping>2.33</Shopping>
-        <Airport>4.94</Airport>
+        <Beach>3.33</Beach>
+        <Shopping>4.04</Shopping>
+        <Airport>2.87</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -295,12 +295,12 @@
     <Features>
       <Laundry>false</Laundry>
       <AirConditioning>false</AirConditioning>
-      <Shuttle>false</Shuttle>
-      <Breakfast>false</Breakfast>
+      <Shuttle>true</Shuttle>
+      <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>3.76</Beach>
-        <Shopping>2.24</Shopping>
-        <Airport>3.07</Airport>
+        <Beach>4.97</Beach>
+        <Shopping>3.54</Shopping>
+        <Airport>1.01</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -334,11 +334,11 @@
       <Laundry>true</Laundry>
       <AirConditioning>true</AirConditioning>
       <Shuttle>false</Shuttle>
-      <Breakfast>true</Breakfast>
+      <Breakfast>false</Breakfast>
       <Distances>
-        <Beach>3.23</Beach>
-        <Shopping>4.33</Shopping>
-        <Airport>1.5</Airport>
+        <Beach>0.03</Beach>
+        <Shopping>3.15</Shopping>
+        <Airport>3.86</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -374,9 +374,9 @@
       <Shuttle>false</Shuttle>
       <Breakfast>false</Breakfast>
       <Distances>
-        <Beach>2.16</Beach>
-        <Shopping>0.91</Shopping>
-        <Airport>2.21</Airport>
+        <Beach>1.98</Beach>
+        <Shopping>3.84</Shopping>
+        <Airport>1.42</Airport>
       </Distances>
     </Features>
   </Hotel>
