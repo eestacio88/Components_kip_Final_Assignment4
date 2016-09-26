@@ -118,7 +118,7 @@ namespace Hotel_Reservations
             //inventories = this.hotelManager.readFromXML(out result, inventories);
 
             int year = 2016;
-            int month = 12;
+            int month = 9;
 
             if (hotels != null)
             {
