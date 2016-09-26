@@ -70,17 +70,17 @@ namespace Hotel_Reservations
                 hotel.Features.Distances.Airport = Math.Round(r.NextDouble() * 5, 2);
                 hotel.Features.Distances.Beach = Math.Round(r.NextDouble() * 5, 2);
                 hotel.Features.Distances.Shopping = Math.Round(r.NextDouble() * 5, 2);
-
-                Room KB = new Room(Room.BedType.KB, 5);
+           
+                Room KB = new Room(Room.BedType.KING, r.Next(90 + 1) + 100, 5);
                 hotel.RoomList.Add(KB);
 
-                Room QB = new Room(Room.BedType.QB, 4);
+                Room QB = new Room(Room.BedType.QUEEN, r.Next(90 + 1) + 100, 4);
                 hotel.RoomList.Add(QB);
 
-                Room DB = new Room(Room.BedType.DB, 2);
+                Room DB = new Room(Room.BedType.DOUBLE, r.Next(90 + 1) + 100, 2);
                 hotel.RoomList.Add(DB);
 
-                Room BS = new Room(Room.BedType.BS, 6);
+                Room BS = new Room(Room.BedType.SUITE, r.Next(90 + 1) + 100, 6);
                 hotel.RoomList.Add(BS);
 
                 this.hotelManager.hotels.Add(hotel);
@@ -113,12 +113,12 @@ namespace Hotel_Reservations
             //Deserialize the xml
             String result = "";
             List<Hotel> hotels = new List<Hotel>();
-            hotels = this.hotelManager.readFromXML(out result, hotels, hotels_filePath);
+            hotels = this.hotelManager.readFromXML(out result, hotels);
             List<InventoryType> inventories = new List<InventoryType>();
             //inventories = this.hotelManager.readFromXML(out result, inventories);
 
             int year = 2016;
-            int month = 9;
+            int month = 12;
 
             if (hotels != null)
             {
@@ -153,7 +153,7 @@ namespace Hotel_Reservations
                     }
                    
                 }
-
+                
                 //Create the xml file
                 this.hotelManager.writeToXML(this.hotelManager.inventory, inventories_filePath);
             }
@@ -166,8 +166,8 @@ namespace Hotel_Reservations
                 Console.WriteLine(hotels[i].Name);
             }
             */
-
-
+            
+            
         }
     }
 }

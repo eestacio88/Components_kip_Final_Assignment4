@@ -24,10 +24,11 @@ namespace HotelsManagement
 
         public Room() { }
 
-        public Room(BedType bedSize = BedType.KB, int capacity = 2)
+        public Room(BedType bedSize = BedType.KB, int DailyRate = 0, int capacity = 2)
         {
             this.BedSize = bedSize;
             this.Capacity = capacity;
+            this.DailyRate = DailyRate;
 
             /*
             switch(this.BedSize)
