@@ -4,22 +4,22 @@
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>142</DailyRate>
+        <DailyRate>108</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>159</DailyRate>
+        <DailyRate>127</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>133</DailyRate>
+        <DailyRate>175</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>116</DailyRate>
+        <DailyRate>189</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -27,14 +27,14 @@
     <Name>Bronze Nebula Hotel &amp; Spa</Name>
     <Address>1600 N Lakeline Blvd #1726, Cedar Park, TX, 78613</Address>
     <Features>
-      <Laundry>true</Laundry>
+      <Laundry>false</Laundry>
       <AirConditioning>false</AirConditioning>
-      <Shuttle>true</Shuttle>
+      <Shuttle>false</Shuttle>
       <Breakfast>false</Breakfast>
       <Distances>
-        <Beach>0.27</Beach>
-        <Shopping>2.5</Shopping>
-        <Airport>4.21</Airport>
+        <Beach>3.13</Beach>
+        <Shopping>0.69</Shopping>
+        <Airport>2.67</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -42,22 +42,22 @@
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>111</DailyRate>
+        <DailyRate>134</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>131</DailyRate>
+        <DailyRate>107</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>169</DailyRate>
+        <DailyRate>144</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>186</DailyRate>
+        <DailyRate>146</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -68,11 +68,11 @@
       <Laundry>true</Laundry>
       <AirConditioning>true</AirConditioning>
       <Shuttle>true</Shuttle>
-      <Breakfast>true</Breakfast>
+      <Breakfast>false</Breakfast>
       <Distances>
-        <Beach>3.28</Beach>
-        <Shopping>0.73</Shopping>
-        <Airport>3.38</Airport>
+        <Beach>4.78</Beach>
+        <Shopping>2.46</Shopping>
+        <Airport>4.52</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -80,22 +80,22 @@
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>117</DailyRate>
+        <DailyRate>113</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>135</DailyRate>
+        <DailyRate>163</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>153</DailyRate>
+        <DailyRate>124</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>179</DailyRate>
+        <DailyRate>170</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -103,14 +103,14 @@
     <Name>Golden Grove Resort</Name>
     <Address>3583 Bayview Ave, Saint James City, FL, 33956</Address>
     <Features>
-      <Laundry>true</Laundry>
+      <Laundry>false</Laundry>
       <AirConditioning>false</AirConditioning>
       <Shuttle>true</Shuttle>
-      <Breakfast>false</Breakfast>
+      <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>4.23</Beach>
-        <Shopping>0.81</Shopping>
-        <Airport>0.78</Airport>
+        <Beach>0.33</Beach>
+        <Shopping>4.11</Shopping>
+        <Airport>0.41</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -118,22 +118,22 @@
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>186</DailyRate>
+        <DailyRate>123</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>102</DailyRate>
+        <DailyRate>138</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>173</DailyRate>
+        <DailyRate>152</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>144</DailyRate>
+        <DailyRate>180</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -142,13 +142,13 @@
     <Address>168 Jones Chapel Shiloh Rd, Danielsville, GA, 30633</Address>
     <Features>
       <Laundry>true</Laundry>
-      <AirConditioning>true</AirConditioning>
-      <Shuttle>true</Shuttle>
-      <Breakfast>true</Breakfast>
+      <AirConditioning>false</AirConditioning>
+      <Shuttle>false</Shuttle>
+      <Breakfast>false</Breakfast>
       <Distances>
-        <Beach>0.58</Beach>
-        <Shopping>0.18</Shopping>
-        <Airport>2.39</Airport>
+        <Beach>4.25</Beach>
+        <Shopping>2.83</Shopping>
+        <Airport>4.82</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -156,22 +156,22 @@
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>126</DailyRate>
+        <DailyRate>108</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>162</DailyRate>
+        <DailyRate>163</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>150</DailyRate>
+        <DailyRate>127</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>129</DailyRate>
+        <DailyRate>106</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -179,166 +179,14 @@
     <Name>Mellow Bay Resorts</Name>
     <Address>3 Elm Pvt Dr, Somerville, AL, 35670</Address>
     <Features>
-      <Laundry>false</Laundry>
+      <Laundry>true</Laundry>
       <AirConditioning>false</AirConditioning>
       <Shuttle>true</Shuttle>
-      <Breakfast>false</Breakfast>
-      <Distances>
-        <Beach>1.59</Beach>
-        <Shopping>0.65</Shopping>
-        <Airport>3.64</Airport>
-      </Distances>
-    </Features>
-  </Hotel>
-  <Hotel>
-    <RoomList>
-      <Room>
-        <BedSize>KB</BedSize>
-        <DailyRate>127</DailyRate>
-        <Capacity>5</Capacity>
-      </Room>
-      <Room>
-        <BedSize>QB</BedSize>
-        <DailyRate>141</DailyRate>
-        <Capacity>4</Capacity>
-      </Room>
-      <Room>
-        <BedSize>DB</BedSize>
-        <DailyRate>189</DailyRate>
-        <Capacity>2</Capacity>
-      </Room>
-      <Room>
-        <BedSize>BS</BedSize>
-        <DailyRate>154</DailyRate>
-        <Capacity>6</Capacity>
-      </Room>
-    </RoomList>
-    <ID>5</ID>
-    <Name>Scarlet Raven Hotel</Name>
-    <Address>1205 S Hitchite Ave, Wewoka, OK, 74884</Address>
-    <Features>
-      <Laundry>true</Laundry>
-      <AirConditioning>true</AirConditioning>
-      <Shuttle>false</Shuttle>
-      <Breakfast>false</Breakfast>
-      <Distances>
-        <Beach>4.49</Beach>
-        <Shopping>3.27</Shopping>
-        <Airport>0.43</Airport>
-      </Distances>
-    </Features>
-  </Hotel>
-  <Hotel>
-    <RoomList>
-      <Room>
-        <BedSize>KB</BedSize>
-        <DailyRate>108</DailyRate>
-        <Capacity>5</Capacity>
-      </Room>
-      <Room>
-        <BedSize>QB</BedSize>
-        <DailyRate>135</DailyRate>
-        <Capacity>4</Capacity>
-      </Room>
-      <Room>
-        <BedSize>DB</BedSize>
-        <DailyRate>166</DailyRate>
-        <Capacity>2</Capacity>
-      </Room>
-      <Room>
-        <BedSize>BS</BedSize>
-        <DailyRate>113</DailyRate>
-        <Capacity>6</Capacity>
-      </Room>
-    </RoomList>
-    <ID>6</ID>
-    <Name>Emerald Hotel</Name>
-    <Address>1015 W Sam Houston St, Pharr, TX, 78557</Address>
-    <Features>
-      <Laundry>true</Laundry>
-      <AirConditioning>true</AirConditioning>
-      <Shuttle>false</Shuttle>
       <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>0.89</Beach>
-        <Shopping>0.15</Shopping>
-        <Airport>1.36</Airport>
-      </Distances>
-    </Features>
-  </Hotel>
-  <Hotel>
-    <RoomList>
-      <Room>
-        <BedSize>KB</BedSize>
-        <DailyRate>105</DailyRate>
-        <Capacity>5</Capacity>
-      </Room>
-      <Room>
-        <BedSize>QB</BedSize>
-        <DailyRate>108</DailyRate>
-        <Capacity>4</Capacity>
-      </Room>
-      <Room>
-        <BedSize>DB</BedSize>
-        <DailyRate>181</DailyRate>
-        <Capacity>2</Capacity>
-      </Room>
-      <Room>
-        <BedSize>BS</BedSize>
-        <DailyRate>128</DailyRate>
-        <Capacity>6</Capacity>
-      </Room>
-    </RoomList>
-    <ID>7</ID>
-    <Name>Ocean Hotel</Name>
-    <Address>270 Cherokee Dr, Saulsbury, TN, 38067</Address>
-    <Features>
-      <Laundry>false</Laundry>
-      <AirConditioning>false</AirConditioning>
-      <Shuttle>true</Shuttle>
-      <Breakfast>false</Breakfast>
-      <Distances>
-        <Beach>0.59</Beach>
-        <Shopping>4.23</Shopping>
-        <Airport>1.47</Airport>
-      </Distances>
-    </Features>
-  </Hotel>
-  <Hotel>
-    <RoomList>
-      <Room>
-        <BedSize>KB</BedSize>
-        <DailyRate>126</DailyRate>
-        <Capacity>5</Capacity>
-      </Room>
-      <Room>
-        <BedSize>QB</BedSize>
-        <DailyRate>166</DailyRate>
-        <Capacity>4</Capacity>
-      </Room>
-      <Room>
-        <BedSize>DB</BedSize>
-        <DailyRate>131</DailyRate>
-        <Capacity>2</Capacity>
-      </Room>
-      <Room>
-        <BedSize>BS</BedSize>
-        <DailyRate>146</DailyRate>
-        <Capacity>6</Capacity>
-      </Room>
-    </RoomList>
-    <ID>8</ID>
-    <Name>Seven Seas Resort</Name>
-    <Address>163 Ems C31 Ln, Warsaw, IN, 46582</Address>
-    <Features>
-      <Laundry>false</Laundry>
-      <AirConditioning>false</AirConditioning>
-      <Shuttle>false</Shuttle>
-      <Breakfast>true</Breakfast>
-      <Distances>
-        <Beach>0.15</Beach>
-        <Shopping>0.69</Shopping>
-        <Airport>3.78</Airport>
+        <Beach>1.69</Beach>
+        <Shopping>0.43</Shopping>
+        <Airport>4.36</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -351,17 +199,169 @@
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>154</DailyRate>
+        <DailyRate>114</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>115</DailyRate>
+        <DailyRate>111</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>153</DailyRate>
+        <DailyRate>165</DailyRate>
+        <Capacity>6</Capacity>
+      </Room>
+    </RoomList>
+    <ID>5</ID>
+    <Name>Scarlet Raven Hotel</Name>
+    <Address>1205 S Hitchite Ave, Wewoka, OK, 74884</Address>
+    <Features>
+      <Laundry>true</Laundry>
+      <AirConditioning>true</AirConditioning>
+      <Shuttle>true</Shuttle>
+      <Breakfast>false</Breakfast>
+      <Distances>
+        <Beach>2.72</Beach>
+        <Shopping>0.36</Shopping>
+        <Airport>0.31</Airport>
+      </Distances>
+    </Features>
+  </Hotel>
+  <Hotel>
+    <RoomList>
+      <Room>
+        <BedSize>KB</BedSize>
+        <DailyRate>174</DailyRate>
+        <Capacity>5</Capacity>
+      </Room>
+      <Room>
+        <BedSize>QB</BedSize>
+        <DailyRate>174</DailyRate>
+        <Capacity>4</Capacity>
+      </Room>
+      <Room>
+        <BedSize>DB</BedSize>
+        <DailyRate>105</DailyRate>
+        <Capacity>2</Capacity>
+      </Room>
+      <Room>
+        <BedSize>BS</BedSize>
+        <DailyRate>185</DailyRate>
+        <Capacity>6</Capacity>
+      </Room>
+    </RoomList>
+    <ID>6</ID>
+    <Name>Emerald Hotel</Name>
+    <Address>1015 W Sam Houston St, Pharr, TX, 78557</Address>
+    <Features>
+      <Laundry>true</Laundry>
+      <AirConditioning>true</AirConditioning>
+      <Shuttle>false</Shuttle>
+      <Breakfast>true</Breakfast>
+      <Distances>
+        <Beach>4.96</Beach>
+        <Shopping>3.21</Shopping>
+        <Airport>0.69</Airport>
+      </Distances>
+    </Features>
+  </Hotel>
+  <Hotel>
+    <RoomList>
+      <Room>
+        <BedSize>KB</BedSize>
+        <DailyRate>105</DailyRate>
+        <Capacity>5</Capacity>
+      </Room>
+      <Room>
+        <BedSize>QB</BedSize>
+        <DailyRate>155</DailyRate>
+        <Capacity>4</Capacity>
+      </Room>
+      <Room>
+        <BedSize>DB</BedSize>
+        <DailyRate>151</DailyRate>
+        <Capacity>2</Capacity>
+      </Room>
+      <Room>
+        <BedSize>BS</BedSize>
+        <DailyRate>142</DailyRate>
+        <Capacity>6</Capacity>
+      </Room>
+    </RoomList>
+    <ID>7</ID>
+    <Name>Ocean Hotel</Name>
+    <Address>270 Cherokee Dr, Saulsbury, TN, 38067</Address>
+    <Features>
+      <Laundry>false</Laundry>
+      <AirConditioning>false</AirConditioning>
+      <Shuttle>true</Shuttle>
+      <Breakfast>true</Breakfast>
+      <Distances>
+        <Beach>0.97</Beach>
+        <Shopping>2.43</Shopping>
+        <Airport>4.76</Airport>
+      </Distances>
+    </Features>
+  </Hotel>
+  <Hotel>
+    <RoomList>
+      <Room>
+        <BedSize>KB</BedSize>
+        <DailyRate>117</DailyRate>
+        <Capacity>5</Capacity>
+      </Room>
+      <Room>
+        <BedSize>QB</BedSize>
+        <DailyRate>114</DailyRate>
+        <Capacity>4</Capacity>
+      </Room>
+      <Room>
+        <BedSize>DB</BedSize>
+        <DailyRate>138</DailyRate>
+        <Capacity>2</Capacity>
+      </Room>
+      <Room>
+        <BedSize>BS</BedSize>
+        <DailyRate>168</DailyRate>
+        <Capacity>6</Capacity>
+      </Room>
+    </RoomList>
+    <ID>8</ID>
+    <Name>Seven Seas Resort</Name>
+    <Address>163 Ems C31 Ln, Warsaw, IN, 46582</Address>
+    <Features>
+      <Laundry>true</Laundry>
+      <AirConditioning>false</AirConditioning>
+      <Shuttle>false</Shuttle>
+      <Breakfast>false</Breakfast>
+      <Distances>
+        <Beach>3.94</Beach>
+        <Shopping>0.11</Shopping>
+        <Airport>1.97</Airport>
+      </Distances>
+    </Features>
+  </Hotel>
+  <Hotel>
+    <RoomList>
+      <Room>
+        <BedSize>KB</BedSize>
+        <DailyRate>140</DailyRate>
+        <Capacity>5</Capacity>
+      </Room>
+      <Room>
+        <BedSize>QB</BedSize>
+        <DailyRate>179</DailyRate>
+        <Capacity>4</Capacity>
+      </Room>
+      <Room>
+        <BedSize>DB</BedSize>
+        <DailyRate>144</DailyRate>
+        <Capacity>2</Capacity>
+      </Room>
+      <Room>
+        <BedSize>BS</BedSize>
+        <DailyRate>101</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -370,13 +370,13 @@
     <Address>8454 Wright St, Fort Campbell, KY, 42223</Address>
     <Features>
       <Laundry>true</Laundry>
-      <AirConditioning>false</AirConditioning>
+      <AirConditioning>true</AirConditioning>
       <Shuttle>true</Shuttle>
-      <Breakfast>false</Breakfast>
+      <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>0.23</Beach>
-        <Shopping>4.76</Shopping>
-        <Airport>3.35</Airport>
+        <Beach>1</Beach>
+        <Shopping>0.47</Shopping>
+        <Airport>4.06</Airport>
       </Distances>
     </Features>
   </Hotel>

@@ -84,6 +84,7 @@ namespace Hotel_Reservations
                 hotel.RoomList.Add(BS);
 
                 this.hotelManager.hotels.Add(hotel);
+                
             }
         }
 
@@ -105,6 +106,7 @@ namespace Hotel_Reservations
         {
             //Create the xml file
             this.hotelManager.writeToXML(this.hotelManager.hotels, hotels_filePath);
+            lblStatus.Text = "Hotel File Created Sucessfully!";
         }
 
         private void btnCreateInventory_Click(object sender, EventArgs e)
@@ -156,6 +158,7 @@ namespace Hotel_Reservations
                 
                 //Create the xml file
                 this.hotelManager.writeToXML(this.hotelManager.inventory, inventories_filePath);
+                
             }
 
             /*
@@ -166,8 +169,8 @@ namespace Hotel_Reservations
                 Console.WriteLine(hotels[i].Name);
             }
             */
-            
-            
+            lblStatus.Text = "";
+            lblStatus.Text = "Inventory File Created Sucessfully!";
         }
     }
 }
