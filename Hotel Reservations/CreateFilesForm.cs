@@ -172,5 +172,12 @@ namespace Hotel_Reservations
             lblStatus.Text = "";
             lblStatus.Text = "Inventory File Created Sucessfully!";
         }
+
+        private void mnu_CreateHotel_Click(object sender, EventArgs e)
+        {
+            //Create the xml file
+            this.hotelManager.writeToXML(this.hotelManager.hotels, hotels_filePath);
+            lblStatus.Text = "Hotel File Created Sucessfully!";
+        }
     }
 }

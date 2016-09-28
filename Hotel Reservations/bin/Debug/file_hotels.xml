@@ -4,22 +4,22 @@
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>108</DailyRate>
+        <DailyRate>135</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>127</DailyRate>
+        <DailyRate>189</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>175</DailyRate>
+        <DailyRate>183</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>189</DailyRate>
+        <DailyRate>160</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -27,14 +27,14 @@
     <Name>Bronze Nebula Hotel &amp; Spa</Name>
     <Address>1600 N Lakeline Blvd #1726, Cedar Park, TX, 78613</Address>
     <Features>
-      <Laundry>false</Laundry>
+      <Laundry>true</Laundry>
       <AirConditioning>false</AirConditioning>
       <Shuttle>false</Shuttle>
       <Breakfast>false</Breakfast>
       <Distances>
-        <Beach>3.13</Beach>
-        <Shopping>0.69</Shopping>
-        <Airport>2.67</Airport>
+        <Beach>3.03</Beach>
+        <Shopping>1.54</Shopping>
+        <Airport>3.52</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -42,22 +42,22 @@
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>134</DailyRate>
+        <DailyRate>104</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>107</DailyRate>
+        <DailyRate>115</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>144</DailyRate>
+        <DailyRate>143</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>146</DailyRate>
+        <DailyRate>184</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -67,12 +67,12 @@
     <Features>
       <Laundry>true</Laundry>
       <AirConditioning>true</AirConditioning>
-      <Shuttle>true</Shuttle>
-      <Breakfast>false</Breakfast>
+      <Shuttle>false</Shuttle>
+      <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>4.78</Beach>
-        <Shopping>2.46</Shopping>
-        <Airport>4.52</Airport>
+        <Beach>2.16</Beach>
+        <Shopping>0.07</Shopping>
+        <Airport>1.67</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -80,22 +80,22 @@
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>113</DailyRate>
+        <DailyRate>162</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>163</DailyRate>
+        <DailyRate>121</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>124</DailyRate>
+        <DailyRate>186</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>170</DailyRate>
+        <DailyRate>186</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -108,9 +108,9 @@
       <Shuttle>true</Shuttle>
       <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>0.33</Beach>
-        <Shopping>4.11</Shopping>
-        <Airport>0.41</Airport>
+        <Beach>4.03</Beach>
+        <Shopping>4.97</Shopping>
+        <Airport>3.88</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -118,22 +118,22 @@
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>123</DailyRate>
+        <DailyRate>137</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>138</DailyRate>
+        <DailyRate>159</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>152</DailyRate>
+        <DailyRate>167</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>180</DailyRate>
+        <DailyRate>173</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -142,13 +142,13 @@
     <Address>168 Jones Chapel Shiloh Rd, Danielsville, GA, 30633</Address>
     <Features>
       <Laundry>true</Laundry>
-      <AirConditioning>false</AirConditioning>
-      <Shuttle>false</Shuttle>
-      <Breakfast>false</Breakfast>
+      <AirConditioning>true</AirConditioning>
+      <Shuttle>true</Shuttle>
+      <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>4.25</Beach>
-        <Shopping>2.83</Shopping>
-        <Airport>4.82</Airport>
+        <Beach>3.02</Beach>
+        <Shopping>1.27</Shopping>
+        <Airport>0.88</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -156,22 +156,22 @@
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>108</DailyRate>
+        <DailyRate>170</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>163</DailyRate>
+        <DailyRate>185</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>127</DailyRate>
+        <DailyRate>113</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>106</DailyRate>
+        <DailyRate>140</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -180,13 +180,13 @@
     <Address>3 Elm Pvt Dr, Somerville, AL, 35670</Address>
     <Features>
       <Laundry>true</Laundry>
-      <AirConditioning>false</AirConditioning>
+      <AirConditioning>true</AirConditioning>
       <Shuttle>true</Shuttle>
-      <Breakfast>true</Breakfast>
+      <Breakfast>false</Breakfast>
       <Distances>
-        <Beach>1.69</Beach>
-        <Shopping>0.43</Shopping>
-        <Airport>4.36</Airport>
+        <Beach>0.31</Beach>
+        <Shopping>3.15</Shopping>
+        <Airport>2.09</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -194,17 +194,17 @@
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>124</DailyRate>
+        <DailyRate>135</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>114</DailyRate>
+        <DailyRate>126</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>111</DailyRate>
+        <DailyRate>162</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
@@ -217,14 +217,14 @@
     <Name>Scarlet Raven Hotel</Name>
     <Address>1205 S Hitchite Ave, Wewoka, OK, 74884</Address>
     <Features>
-      <Laundry>true</Laundry>
+      <Laundry>false</Laundry>
       <AirConditioning>true</AirConditioning>
       <Shuttle>true</Shuttle>
-      <Breakfast>false</Breakfast>
+      <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>2.72</Beach>
-        <Shopping>0.36</Shopping>
-        <Airport>0.31</Airport>
+        <Beach>4.15</Beach>
+        <Shopping>2.5</Shopping>
+        <Airport>1.64</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -232,22 +232,22 @@
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>174</DailyRate>
+        <DailyRate>171</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>174</DailyRate>
+        <DailyRate>169</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>105</DailyRate>
+        <DailyRate>175</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>185</DailyRate>
+        <DailyRate>117</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -257,12 +257,12 @@
     <Features>
       <Laundry>true</Laundry>
       <AirConditioning>true</AirConditioning>
-      <Shuttle>false</Shuttle>
+      <Shuttle>true</Shuttle>
       <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>4.96</Beach>
-        <Shopping>3.21</Shopping>
-        <Airport>0.69</Airport>
+        <Beach>1.29</Beach>
+        <Shopping>2.06</Shopping>
+        <Airport>0.57</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -275,17 +275,17 @@
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>155</DailyRate>
+        <DailyRate>141</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>151</DailyRate>
+        <DailyRate>100</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>142</DailyRate>
+        <DailyRate>172</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -294,13 +294,13 @@
     <Address>270 Cherokee Dr, Saulsbury, TN, 38067</Address>
     <Features>
       <Laundry>false</Laundry>
-      <AirConditioning>false</AirConditioning>
+      <AirConditioning>true</AirConditioning>
       <Shuttle>true</Shuttle>
-      <Breakfast>true</Breakfast>
+      <Breakfast>false</Breakfast>
       <Distances>
-        <Beach>0.97</Beach>
-        <Shopping>2.43</Shopping>
-        <Airport>4.76</Airport>
+        <Beach>1.94</Beach>
+        <Shopping>4.67</Shopping>
+        <Airport>0.45</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -308,22 +308,22 @@
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>117</DailyRate>
+        <DailyRate>182</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>114</DailyRate>
+        <DailyRate>123</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>138</DailyRate>
+        <DailyRate>140</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>168</DailyRate>
+        <DailyRate>111</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -331,14 +331,14 @@
     <Name>Seven Seas Resort</Name>
     <Address>163 Ems C31 Ln, Warsaw, IN, 46582</Address>
     <Features>
-      <Laundry>true</Laundry>
+      <Laundry>false</Laundry>
       <AirConditioning>false</AirConditioning>
       <Shuttle>false</Shuttle>
-      <Breakfast>false</Breakfast>
+      <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>3.94</Beach>
-        <Shopping>0.11</Shopping>
-        <Airport>1.97</Airport>
+        <Beach>1.38</Beach>
+        <Shopping>2.12</Shopping>
+        <Airport>3.38</Airport>
       </Distances>
     </Features>
   </Hotel>
@@ -346,22 +346,22 @@
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>140</DailyRate>
+        <DailyRate>133</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>179</DailyRate>
+        <DailyRate>113</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>144</DailyRate>
+        <DailyRate>135</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>101</DailyRate>
+        <DailyRate>155</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -369,14 +369,14 @@
     <Name>Stratosphere Hotel &amp; Spa</Name>
     <Address>8454 Wright St, Fort Campbell, KY, 42223</Address>
     <Features>
-      <Laundry>true</Laundry>
+      <Laundry>false</Laundry>
       <AirConditioning>true</AirConditioning>
       <Shuttle>true</Shuttle>
       <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>1</Beach>
-        <Shopping>0.47</Shopping>
-        <Airport>4.06</Airport>
+        <Beach>4.73</Beach>
+        <Shopping>1.86</Shopping>
+        <Airport>1.27</Airport>
       </Distances>
     </Features>
   </Hotel>
