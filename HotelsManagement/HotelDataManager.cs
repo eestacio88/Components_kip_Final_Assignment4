@@ -14,7 +14,7 @@ namespace HotelsManagement
         public List<Hotel> hotels;
         public List<InventoryType> inventory;
         private StreamWriter streamWriter;
-        private StreamReader streamReader;
+        public StreamReader streamReader;
         private XmlSerializer xmlWriter;
         private XmlSerializationReader xmlReader;
        
@@ -28,7 +28,7 @@ namespace HotelsManagement
             inventory = new List<InventoryType>();
         }
 
-        public void writeToXML<T>(List<T> list, String path = null)
+        public void writeToXML<T>(out String result, List<T> list, String path = null)
         {
             if (path == null)
             {
@@ -38,18 +38,31 @@ namespace HotelsManagement
 
             //Console.WriteLine(path);
 
-            if (list != null)
+            try {
+
+                if (list != null)
+                {
+                    //Cast the ref list to hotels 
+                    if (typeof(T) == typeof(Hotel)) this.hotels = list.Cast<Hotel>().ToList();
+
+                    //Cast the ref list to inventories
+                    if (typeof(T) == typeof(InventoryType)) this.inventory = list.Cast<InventoryType>().ToList();
+
+                    this.streamWriter = new StreamWriter(path);
+                    this.xmlWriter = new XmlSerializer(list.GetType());
+                    this.xmlWriter.Serialize(this.streamWriter, list);
+                    this.streamWriter.Close();
+                    result = "File write operation was successful!";
+
+                }
+                else
+                {
+                    result = "File read operation failed: The list was null!";
+                }
+            }
+            catch(Exception error)
             {
-                //Cast the ref list to hotels 
-                if (typeof(T) == typeof(Hotel)) this.hotels = list.Cast<Hotel>().ToList();
-
-                //Cast the ref list to inventories
-                if (typeof(T) == typeof(InventoryType)) this.inventory = list.Cast<InventoryType>().ToList();
-
-                this.streamWriter = new StreamWriter(path);
-                this.xmlWriter = new XmlSerializer(list.GetType());
-                this.xmlWriter.Serialize(this.streamWriter, list);
-                this.streamWriter.Close();
+                result = "File write operation failed: " + error;
             }
         }
 
@@ -59,11 +72,12 @@ namespace HotelsManagement
             {
                 if (filePath == null) filePath = this.defaultPath;
 
-                StreamReader xmlStream = new StreamReader(filePath);
+                this.streamReader = new StreamReader(filePath);
                 this.xmlWriter = new XmlSerializer(list.GetType());           
-                result = "File read operation successful!";
+                result = "File read operation was successful!";
+               
                 //xmlStream.Close();
-                return (List<T>)this.xmlWriter.Deserialize(xmlStream);
+                return (List<T>)this.xmlWriter.Deserialize(this.streamReader);
             }
             catch(Exception error)
             {

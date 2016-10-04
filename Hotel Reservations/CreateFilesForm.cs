@@ -94,8 +94,9 @@ namespace Hotel_Reservations
         private void mnu_CreateHotel_Click(object sender, EventArgs e)
         {
             //Create the xml file
-            this.hotelManager.writeToXML(this.hotelManager.hotels, hotels_filePath);
-            lblStatus.Text = "Hotel File Created Sucessfully!";
+            String result = "";
+            this.hotelManager.writeToXML(out result, this.hotelManager.hotels, hotels_filePath);
+            lblStatus.Text = "Hotel File - " + result;
         }
 
         private void mnu_CreateRoomInventory_Click(object sender, EventArgs e)
@@ -104,7 +105,8 @@ namespace Hotel_Reservations
             //Deserialize the xml
             String result = "";
             List<Hotel> hotels = new List<Hotel>();
-            hotels = this.hotelManager.readFromXML(out result, hotels);
+            hotels = this.hotelManager.readFromXML(out result, hotels, hotels_filePath);
+            this.hotelManager.streamReader.Close();
 
             List<InventoryType> inventories = new List<InventoryType>();
             //inventories = this.hotelManager.readFromXML(out result, inventories);
@@ -127,7 +129,6 @@ namespace Hotel_Reservations
 
                         for (int h = 0; h < hotels.Count; h++)
                         {
-
                             //Grab the hotel
                             Hotel hotel = hotels[h];
 
@@ -147,7 +148,7 @@ namespace Hotel_Reservations
                 }
 
                 //Create the xml file
-                this.hotelManager.writeToXML(this.hotelManager.inventory, inventories_filePath);
+                this.hotelManager.writeToXML(out result, this.hotelManager.inventory, inventories_filePath);
 
             }
 
@@ -159,8 +160,8 @@ namespace Hotel_Reservations
                 Console.WriteLine(hotels[i].Name);
             }
             */
-            lblStatus.Text = "";
-            lblStatus.Text = "Inventory File Created Sucessfully!";
+           
+            lblStatus.Text = "Inventory File - " + result;
 
         }
 
@@ -184,25 +185,16 @@ namespace Hotel_Reservations
             //Deserialize the xml
             String result = "";
             List<RoomType> roomTypes = new List<RoomType>();
-            roomTypes = this.hotelManager.readFromXML(out result, roomTypes);
-
-            //List<InventoryType> inventories = new List<InventoryType>();
-            //inventories = this.hotelManager.readFromXML(out result, inventories);
-
-
-
-            //Create the xml file
-            // this.hotelManager.writeToXML(this.hotelManager.inventory, inventories_filePath);
-
-
-
-            lblStatus.Text = "";
-            lblStatus.Text = "Inventory File Created Sucessfully!";
+            roomTypes = this.hotelManager.readFromXML(out result, roomTypes, roomtypes_filePath);
+            this.hotelManager.streamReader.Close();
+           
+            lblStatus.Text = "Inventory File Created Sucessfully 2!";
         }
 
-        private void btnCreateHotels_Click_1(object sender, EventArgs e)
+        private void btnCreateNewHotel_Click(object sender, EventArgs e)
         {
 
         }
+
     }
 }
