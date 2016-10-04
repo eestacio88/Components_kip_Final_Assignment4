@@ -19,6 +19,7 @@ namespace HotelsManagement
         private XmlSerializationReader xmlReader;
        
         private String defaultPath = @"file.xml";
+        private String RoomPath = @"";
         
         public HotelDataManager ()
         {
@@ -72,5 +73,8 @@ namespace HotelsManagement
             return null;
            
         }
+       
+
+
     }
 }

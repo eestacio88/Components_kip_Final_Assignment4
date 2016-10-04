@@ -19,8 +19,11 @@ namespace Hotel_Reservations
 
         public HotelDataManager hotelManager;
         public List<Hotel> hotel_list;
+        public List<RoomType> roomtype_list;
+
         public String hotels_filePath = "file_hotels.xml";
         public String inventories_filePath = "file_roominventory.xml";
+        public String roomtypes_filePath = "roomtype.xml";
 
         public CreateFilesForm()
         {
@@ -60,17 +63,17 @@ namespace Hotel_Reservations
             Random r = new Random();
 
             for (int i = 0; i < amountOfHotels; i++)
-            {            
+            {
                 Hotel hotel = new Hotel(i, hotelNames[i], hotelAddresses[i]);
                 hotel.Features = new Features(
-                    (r.NextDouble() < 0.5) ? true : false, 
-                    (r.NextDouble() < 0.5) ? true : false, 
-                    (r.NextDouble() < 0.5) ? true : false, 
+                    (r.NextDouble() < 0.5) ? true : false,
+                    (r.NextDouble() < 0.5) ? true : false,
+                    (r.NextDouble() < 0.5) ? true : false,
                     (r.NextDouble() < 0.5) ? true : false);
                 hotel.Features.Distances.Airport = Math.Round(r.NextDouble() * 5, 2);
                 hotel.Features.Distances.Beach = Math.Round(r.NextDouble() * 5, 2);
                 hotel.Features.Distances.Shopping = Math.Round(r.NextDouble() * 5, 2);
-           
+
                 Room KB = new Room(Room.BedType.KB, (r.Next(90 + 1) + 100), 5);
                 hotel.RoomList.Add(KB);
 
@@ -84,38 +87,25 @@ namespace Hotel_Reservations
                 hotel.RoomList.Add(BS);
 
                 this.hotelManager.hotels.Add(hotel);
-                
+
             }
         }
 
-        private void btnDisplayHotels_Click(object sender, EventArgs e)
-        {
-            BrowserForm frm = new BrowserForm();
-            frm.URL = hotels_filePath; // "hotels.xml";
-            frm.ShowDialog();
-        }
-
-        private void btnDisplayInventory_Click(object sender, EventArgs e)
-        {
-            BrowserForm frm = new BrowserForm();
-            frm.URL = inventories_filePath; //"roominventory.xml";
-            frm.ShowDialog();
-        }
-
-        private void btnCreateHotels_Click(object sender, EventArgs e)
+        private void mnu_CreateHotel_Click(object sender, EventArgs e)
         {
             //Create the xml file
             this.hotelManager.writeToXML(this.hotelManager.hotels, hotels_filePath);
             lblStatus.Text = "Hotel File Created Sucessfully!";
         }
 
-        private void btnCreateInventory_Click(object sender, EventArgs e)
+        private void mnu_CreateRoomInventory_Click(object sender, EventArgs e)
         {
 
             //Deserialize the xml
             String result = "";
             List<Hotel> hotels = new List<Hotel>();
             hotels = this.hotelManager.readFromXML(out result, hotels);
+
             List<InventoryType> inventories = new List<InventoryType>();
             //inventories = this.hotelManager.readFromXML(out result, inventories);
 
@@ -137,10 +127,10 @@ namespace Hotel_Reservations
 
                         for (int h = 0; h < hotels.Count; h++)
                         {
-                           
+
                             //Grab the hotel
                             Hotel hotel = hotels[h];
-                            
+
                             //Create the inventory instance
                             inventory = new InventoryType(hotel.ID, dt);
                             inventory.Quantity = r.Next(0, 6);
@@ -151,14 +141,14 @@ namespace Hotel_Reservations
                             //Add inventory instance to manager inventory list                        
                             this.hotelManager.inventory.Add(inventory);
                         }
-                                                 
+
                     }
-                   
+
                 }
-                
+
                 //Create the xml file
                 this.hotelManager.writeToXML(this.hotelManager.inventory, inventories_filePath);
-                
+
             }
 
             /*
@@ -171,13 +161,48 @@ namespace Hotel_Reservations
             */
             lblStatus.Text = "";
             lblStatus.Text = "Inventory File Created Sucessfully!";
+
         }
 
-        private void mnu_CreateHotel_Click(object sender, EventArgs e)
+        private void mnu_DisplayHotels_Click(object sender, EventArgs e)
         {
+            BrowserForm frm = new BrowserForm();
+            frm.URL = hotels_filePath; // "hotels.xml";
+            frm.ShowDialog();
+        }
+
+        private void mnu_DisplayRoomsInventory_Click(object sender, EventArgs e)
+        {
+            BrowserForm frm = new BrowserForm();
+            frm.URL = inventories_filePath; //"roominventory.xml";
+            frm.ShowDialog();
+        }
+
+        private void btnLoadHotel_Click(object sender, EventArgs e)
+        {
+
+            //Deserialize the xml
+            String result = "";
+            List<RoomType> roomTypes = new List<RoomType>();
+            roomTypes = this.hotelManager.readFromXML(out result, roomTypes);
+
+            //List<InventoryType> inventories = new List<InventoryType>();
+            //inventories = this.hotelManager.readFromXML(out result, inventories);
+
+
+
             //Create the xml file
-            this.hotelManager.writeToXML(this.hotelManager.hotels, hotels_filePath);
-            lblStatus.Text = "Hotel File Created Sucessfully!";
+            // this.hotelManager.writeToXML(this.hotelManager.inventory, inventories_filePath);
+
+
+
+            lblStatus.Text = "";
+            lblStatus.Text = "Inventory File Created Sucessfully!";
+        }
+
+        private void btnCreateHotels_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

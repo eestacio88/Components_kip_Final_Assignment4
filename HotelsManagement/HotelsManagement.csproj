@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RoomType.cs" />
     <Compile Include="Distances.cs" />
     <Compile Include="Features.cs" />
     <Compile Include="HotelDataManager.cs" />
