@@ -87,8 +87,5 @@ namespace HotelsManagement
             return null;
            
         }
-       
-
-
     }
 }

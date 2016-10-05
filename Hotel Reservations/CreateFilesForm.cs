@@ -11,19 +11,19 @@ using HotelsManagement;
 using System.IO;
 using System.Xml;
 
-
 namespace Hotel_Reservations
 {
     public partial class CreateFilesForm : Form
     {
-
+    
         public HotelDataManager hotelManager;
         public List<Hotel> hotel_list;
+        public List<Hotel> newHotel_list;
         public List<RoomType> roomtype_list;
 
         public String hotels_filePath = "file_hotels.xml";
         public String inventories_filePath = "file_roominventory.xml";
-        public String roomtypes_filePath = "roomtype.xml";
+        public String roomtypes_filePath = "roomtypes.xml";
 
         public CreateFilesForm()
         {
@@ -181,20 +181,29 @@ namespace Hotel_Reservations
 
         private void btnLoadHotel_Click(object sender, EventArgs e)
         {
-
             //Deserialize the xml
             String result = "";
-            List<RoomType> roomTypes = new List<RoomType>();
-            roomTypes = this.hotelManager.readFromXML(out result, roomTypes, roomtypes_filePath);
+            this.roomtype_list = new List<RoomType>();
+            this.roomtype_list = this.hotelManager.readFromXML(out result, this.roomtype_list, roomtypes_filePath);
+
+            this.hotel_list = new List<Hotel>();
+            this.hotel_list = this.hotelManager.readFromXML(out result, this.hotel_list, hotels_filePath);
+
+            this.hotelManager.streamReader.Close();
+
+            foreach (RoomType hotel in this.roomtype_list)
+            {
+                System.Console.WriteLine(hotel.ID);
+            }
+
             this.hotelManager.streamReader.Close();
            
-            lblStatus.Text = "Inventory File Created Sucessfully 2!";
+            lblStatus.Text = "Operation - " + result;
         }
 
         private void btnCreateNewHotel_Click(object sender, EventArgs e)
         {
 
         }
-
     }
 }
