@@ -185,18 +185,22 @@ namespace Hotel_Reservations
             String result = "";
             this.roomtype_list = new List<RoomType>();
             this.roomtype_list = this.hotelManager.readFromXML(out result, this.roomtype_list, roomtypes_filePath);
+            this.hotelManager.streamReader.Close();
+
+            //System.Console.WriteLine("RoomList: " + this.roomtype_list);
+
+            if (this.roomtype_list != null)
+                foreach (RoomType roomtype in this.roomtype_list)
+                {
+                    System.Console.WriteLine(roomtype.name);
+                }
 
             this.hotel_list = new List<Hotel>();
             this.hotel_list = this.hotelManager.readFromXML(out result, this.hotel_list, hotels_filePath);
 
-            this.hotelManager.streamReader.Close();
+            
 
-            foreach (RoomType hotel in this.roomtype_list)
-            {
-                System.Console.WriteLine(hotel.ID);
-            }
-
-            this.hotelManager.streamReader.Close();
+            
            
             lblStatus.Text = "Operation - " + result;
         }

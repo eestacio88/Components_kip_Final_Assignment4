@@ -73,7 +73,10 @@ namespace HotelsManagement
                 if (filePath == null) filePath = this.defaultPath;
 
                 this.streamReader = new StreamReader(filePath);
-                this.xmlWriter = new XmlSerializer(list.GetType());           
+                this.xmlWriter = new XmlSerializer(list.GetType());
+
+                //System.Console.WriteLine("List Type: " + list.GetType());
+                       
                 result = "File read operation was successful!";
                
                 //xmlStream.Close();

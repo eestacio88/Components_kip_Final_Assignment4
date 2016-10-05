@@ -8,17 +8,16 @@ namespace HotelsManagement
 {
     public class RoomType
     {
-        public int ID { get; set; }
-        public String Name { get; set; }
+        public String id { get; set; }
+        public String name { get; set; }
+
+        public RoomType(String name, String ID)
+        {
+            this.name = name;
+            this.id = ID;
+        }
 
         public RoomType()
         { }
-
-        public RoomType(String name, int ID)
-        {
-            this.Name = name;
-            this.ID = ID;
-        }
-
     }
 }
