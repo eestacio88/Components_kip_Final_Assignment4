@@ -189,20 +189,35 @@ namespace Hotel_Reservations
 
             //System.Console.WriteLine("RoomList: " + this.roomtype_list);
 
-            if (this.roomtype_list != null)
-                foreach (RoomType roomtype in this.roomtype_list)
-                {
-                    System.Console.WriteLine(roomtype.name);
-                }
+            //if (this.roomtype_list != null)
+                //foreach (RoomType roomtype in this.roomtype_list)
+               // {
+                //    System.Console.WriteLine(roomtype.name);
+               // }
 
             this.hotel_list = new List<Hotel>();
             this.hotel_list = this.hotelManager.readFromXML(out result, this.hotel_list, hotels_filePath);
+            this.hotelManager.streamReader.Close();
 
-            
+            //Final Hotel List
 
-            
-           
-            lblStatus.Text = "Operation - " + result;
+            this.newHotel_list = new List<Hotel>();
+            HotelListItem Item = null;
+            Random r = new Random();
+
+            for (int h = 0; h < hotel_list.Count; h++)
+            {
+                //Grab the hotel
+                Hotel hotel = hotel_list[h];
+
+                Item = new HotelListItem(hotel.ID, hotel.Name, r.NextDouble(), );
+
+            }
+
+
+
+
+                lblStatus.Text = "Operation - " + result;
         }
 
         private void btnCreateNewHotel_Click(object sender, EventArgs e)

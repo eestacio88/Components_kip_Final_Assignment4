@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HotelsManagement
 {
-    class HotelListItem
+    public class HotelListItem
     {
         public int ID { get; set; }
         public String Name { get; set; }
