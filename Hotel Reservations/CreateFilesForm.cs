@@ -209,13 +209,12 @@ namespace Hotel_Reservations
             {
                 //Grab the hotel
                 Hotel hotel = hotel_list[h];
+                double Temp = r.NextDouble();
 
-                Item = new HotelListItem(hotel.ID, hotel.Name, r.NextDouble(), );
+               Item = new HotelListItem(hotel.ID, hotel.Name, Temp);
+
 
             }
-
-
-
 
                 lblStatus.Text = "Operation - " + result;
         }

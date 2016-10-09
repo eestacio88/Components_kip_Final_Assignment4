@@ -11,17 +11,16 @@ namespace HotelsManagement
         public int ID { get; set; }
         public String Name { get; set; }
         public Double Rating { get; set; }
-        public List<RoomType> RoomTypes { get; set; }
+        public List<RoomType> RoomTypes;
 
+        public HotelListItem() { }
 
-        HotelListItem() { }
-
-        HotelListItem(int id, String name, Double rating, List<RoomType> roomtypes)
+        public HotelListItem(int id, String name, Double rating)
         {
             this.ID = id;
             this.Name = name;
             this.Rating = rating;
-            this.RoomTypes = roomtypes;
+            this.RoomTypes = new List<RoomType>();
         }
 
     }
