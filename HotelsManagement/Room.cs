@@ -37,7 +37,6 @@ namespace HotelsManagement
                 case BedType.QB: this.Name = "Single Queen Bed"; break;
                 case BedType.DB: this.Name = "Two Double Beds"; break;
                 case BedType.BS: this.Name = "One Bedroom Suite"; break;
-
             }
             */
 

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using HotelsManagement;
 using System.IO;
 using System.Xml;
+using System.Xml.Xsl;
 
 namespace Hotel_Reservations
 {
@@ -18,10 +19,11 @@ namespace Hotel_Reservations
     
         public HotelDataManager hotelManager;
         public List<Hotel> hotel_list;
-        public List<Hotel> newHotel_list;
+        public List<HotelListItem> newHotel_list;
         public List<RoomType> roomtype_list;
 
         public String hotels_filePath = "file_hotels.xml";
+        public String new_hotels_filePath = "file_new_hotels.xml";
         public String inventories_filePath = "file_roominventory.xml";
         public String roomtypes_filePath = "roomtypes.xml";
 
@@ -74,16 +76,16 @@ namespace Hotel_Reservations
                 hotel.Features.Distances.Beach = Math.Round(r.NextDouble() * 5, 2);
                 hotel.Features.Distances.Shopping = Math.Round(r.NextDouble() * 5, 2);
 
-                Room KB = new Room(Room.BedType.KB, (r.Next(90 + 1) + 100), 5);
+                Room KB = new Room(Room.BedType.KB, (r.Next(50, 700) ), 5);
                 hotel.RoomList.Add(KB);
 
-                Room QB = new Room(Room.BedType.QB, (r.Next(90 + 1) + 100), 4);
+                Room QB = new Room(Room.BedType.QB, (r.Next(50, 700) ), 4);
                 hotel.RoomList.Add(QB);
 
-                Room DB = new Room(Room.BedType.DB, r.Next(90 + 1) + 100, 2);
+                Room DB = new Room(Room.BedType.DB, r.Next(50, 700) , 2);
                 hotel.RoomList.Add(DB);
 
-                Room BS = new Room(Room.BedType.BS, r.Next(90 + 1) + 100, 6);
+                Room BS = new Room(Room.BedType.BS, r.Next(50, 700) , 6);
                 hotel.RoomList.Add(BS);
 
                 this.hotelManager.hotels.Add(hotel);
@@ -200,28 +202,90 @@ namespace Hotel_Reservations
             this.hotelManager.streamReader.Close();
 
             //Final Hotel List
-
-            this.newHotel_list = new List<Hotel>();
-            HotelListItem Item = null;
+            this.newHotel_list = new List<HotelListItem>();
+            //HotelListItem Item = null;
             Random r = new Random();
+
+            List<double> ratingValues = new List<double>();
+            ratingValues.Add(1.5);
+            ratingValues.Add(2);
+            ratingValues.Add(2.5);
+            ratingValues.Add(3);
+            ratingValues.Add(3.5);
+            ratingValues.Add(4);
+            ratingValues.Add(4.5);
+            ratingValues.Add(5);
 
             for (int h = 0; h < hotel_list.Count; h++)
             {
                 //Grab the hotel
                 Hotel hotel = hotel_list[h];
-                double Temp = r.NextDouble();
+                double rating = 1.5;
 
-               Item = new HotelListItem(hotel.ID, hotel.Name, Temp);
+                if (ratingValues.Count > 0)
+                {
+                    int randomIndex = r.Next(ratingValues.Count);
+                    rating = ratingValues[randomIndex];
+                    ratingValues.Remove(rating);
+                }
+                else
+                {
+                    rating = r.Next(1, 5);
+                    rating = (r.NextDouble() < 0.5) ? rating + 0.5 : rating;
+                    if (rating <= 1) rating = 1.5;
+                    if (rating > 5) rating = 5;
+                }
+
+                //System.Console.Out.WriteLine(rating);
+
+                //Create the list item
+                HotelListItem Item = new HotelListItem(hotel.ID, hotel.Name, rating);
+
+                //Create its room
+                listItemRoom room;
+
+                //Iterate through the loaded hotel file's rooms
+                for (int a = 0; a < hotel.RoomList.Count; a++)
+                {
+                    //Get the the rooms
+                    Room tempRoom = hotel.RoomList[a];
+                    room = new listItemRoom(listItemRoom.getNameFromBedSize(tempRoom.BedSize.ToString()), tempRoom.DailyRate, tempRoom.Capacity);
+                    //System.Console.WriteLine(room.Type);
+
+                    //Add to the new hotel item's room list
+                    Item.RoomTypes.Add(room);
+                }
 
 
+                //Add the new hotel item to the final list
+                this.newHotel_list.Add(Item);              
             }
 
-                lblStatus.Text = "Operation - " + result;
+            //Serialize
+            this.hotelManager.writeToXML(out result, this.newHotel_list, new_hotels_filePath);
+            lblStatus.Text = "Operation - " + result;
         }
+
+        String xslt_path = "file_newHotel.xslt";
+        const string xsl_html_file_path = "file_new_hotels.html";
 
         private void btnCreateNewHotel_Click(object sender, EventArgs e)
         {
+            try {
+                XslCompiledTransform xslt = new XslCompiledTransform();
+                xslt.Load(xslt_path);
+                xslt.Transform(new_hotels_filePath, xsl_html_file_path);
 
+                BrowserForm frm = new BrowserForm();
+                frm.URL = xsl_html_file_path;
+                frm.ShowDialog();
+
+                lblStatus.Text = "Operation - Successful!";
+            }catch(Exception err)
+            {
+                lblStatus.Text = "Operation - " + err.Message;
+                System.Console.Out.WriteLine(err.Message);
+            }
         }
     }
 }

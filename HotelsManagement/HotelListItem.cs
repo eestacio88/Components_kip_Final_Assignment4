@@ -11,7 +11,7 @@ namespace HotelsManagement
         public int ID { get; set; }
         public String Name { get; set; }
         public Double Rating { get; set; }
-        public List<RoomType> RoomTypes;
+        public List<listItemRoom> RoomTypes;
 
         public HotelListItem() { }
 
@@ -20,7 +20,7 @@ namespace HotelsManagement
             this.ID = id;
             this.Name = name;
             this.Rating = rating;
-            this.RoomTypes = new List<RoomType>();
+            this.RoomTypes = new List<listItemRoom>();
         }
 
     }
