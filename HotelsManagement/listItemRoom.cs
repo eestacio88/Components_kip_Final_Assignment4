@@ -9,16 +9,15 @@ namespace HotelsManagement
     public class listItemRoom
     {
         public String Type { get; set; }
-        public int DailyRate { get; set; }
+        public double DailyRate { get; set; }
         public int Capacity { get; set; }
         
-
         public listItemRoom()
         {
 
         }
 
-        public listItemRoom(String type, int dailyrate, int capacity)
+        public listItemRoom(String type, double dailyrate, int capacity)
         {
             this.Type = type;
             this.DailyRate = dailyrate;

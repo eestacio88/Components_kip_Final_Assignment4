@@ -4,103 +4,103 @@
     <RoomTypes>
       <listItemRoom>
         <Type>Single King Bed</Type>
-        <DailyRate>454</DailyRate>
+        <DailyRate>420</DailyRate>
         <Capacity>5</Capacity>
       </listItemRoom>
       <listItemRoom>
         <Type>Single Queen Bed</Type>
-        <DailyRate>685</DailyRate>
+        <DailyRate>490</DailyRate>
         <Capacity>4</Capacity>
       </listItemRoom>
       <listItemRoom>
         <Type>Two Double Beds</Type>
-        <DailyRate>668</DailyRate>
+        <DailyRate>490</DailyRate>
         <Capacity>2</Capacity>
       </listItemRoom>
       <listItemRoom>
         <Type>One Bedroom Suite</Type>
-        <DailyRate>467</DailyRate>
+        <DailyRate>540</DailyRate>
         <Capacity>6</Capacity>
       </listItemRoom>
     </RoomTypes>
     <ID>0</ID>
     <Name>Bronze Nebula Hotel &amp; Spa</Name>
-    <Rating>1.5</Rating>
-  </HotelListItem>
-  <HotelListItem>
-    <RoomTypes>
-      <listItemRoom>
-        <Type>Single King Bed</Type>
-        <DailyRate>237</DailyRate>
-        <Capacity>5</Capacity>
-      </listItemRoom>
-      <listItemRoom>
-        <Type>Single Queen Bed</Type>
-        <DailyRate>254</DailyRate>
-        <Capacity>4</Capacity>
-      </listItemRoom>
-      <listItemRoom>
-        <Type>Two Double Beds</Type>
-        <DailyRate>68</DailyRate>
-        <Capacity>2</Capacity>
-      </listItemRoom>
-      <listItemRoom>
-        <Type>One Bedroom Suite</Type>
-        <DailyRate>538</DailyRate>
-        <Capacity>6</Capacity>
-      </listItemRoom>
-    </RoomTypes>
-    <ID>1</ID>
-    <Name>Lord's Valley Hotel</Name>
     <Rating>4</Rating>
   </HotelListItem>
   <HotelListItem>
     <RoomTypes>
       <listItemRoom>
         <Type>Single King Bed</Type>
-        <DailyRate>235</DailyRate>
+        <DailyRate>260</DailyRate>
         <Capacity>5</Capacity>
       </listItemRoom>
       <listItemRoom>
         <Type>Single Queen Bed</Type>
-        <DailyRate>434</DailyRate>
+        <DailyRate>310</DailyRate>
         <Capacity>4</Capacity>
       </listItemRoom>
       <listItemRoom>
         <Type>Two Double Beds</Type>
-        <DailyRate>134</DailyRate>
+        <DailyRate>310</DailyRate>
         <Capacity>2</Capacity>
       </listItemRoom>
       <listItemRoom>
         <Type>One Bedroom Suite</Type>
-        <DailyRate>264</DailyRate>
+        <DailyRate>340</DailyRate>
         <Capacity>6</Capacity>
       </listItemRoom>
     </RoomTypes>
-    <ID>2</ID>
-    <Name>Golden Grove Resort</Name>
-    <Rating>3</Rating>
+    <ID>1</ID>
+    <Name>Lord's Valley Hotel</Name>
+    <Rating>2.5</Rating>
   </HotelListItem>
   <HotelListItem>
     <RoomTypes>
       <listItemRoom>
         <Type>Single King Bed</Type>
-        <DailyRate>433</DailyRate>
+        <DailyRate>210</DailyRate>
         <Capacity>5</Capacity>
       </listItemRoom>
       <listItemRoom>
         <Type>Single Queen Bed</Type>
-        <DailyRate>362</DailyRate>
+        <DailyRate>240</DailyRate>
         <Capacity>4</Capacity>
       </listItemRoom>
       <listItemRoom>
         <Type>Two Double Beds</Type>
-        <DailyRate>78</DailyRate>
+        <DailyRate>250</DailyRate>
         <Capacity>2</Capacity>
       </listItemRoom>
       <listItemRoom>
         <Type>One Bedroom Suite</Type>
-        <DailyRate>304</DailyRate>
+        <DailyRate>270</DailyRate>
+        <Capacity>6</Capacity>
+      </listItemRoom>
+    </RoomTypes>
+    <ID>2</ID>
+    <Name>Golden Grove Resort</Name>
+    <Rating>2</Rating>
+  </HotelListItem>
+  <HotelListItem>
+    <RoomTypes>
+      <listItemRoom>
+        <Type>Single King Bed</Type>
+        <DailyRate>470</DailyRate>
+        <Capacity>5</Capacity>
+      </listItemRoom>
+      <listItemRoom>
+        <Type>Single Queen Bed</Type>
+        <DailyRate>550</DailyRate>
+        <Capacity>4</Capacity>
+      </listItemRoom>
+      <listItemRoom>
+        <Type>Two Double Beds</Type>
+        <DailyRate>550</DailyRate>
+        <Capacity>2</Capacity>
+      </listItemRoom>
+      <listItemRoom>
+        <Type>One Bedroom Suite</Type>
+        <DailyRate>610</DailyRate>
         <Capacity>6</Capacity>
       </listItemRoom>
     </RoomTypes>
@@ -112,76 +112,76 @@
     <RoomTypes>
       <listItemRoom>
         <Type>Single King Bed</Type>
-        <DailyRate>333</DailyRate>
+        <DailyRate>360</DailyRate>
         <Capacity>5</Capacity>
       </listItemRoom>
       <listItemRoom>
         <Type>Single Queen Bed</Type>
-        <DailyRate>200</DailyRate>
+        <DailyRate>430</DailyRate>
         <Capacity>4</Capacity>
       </listItemRoom>
       <listItemRoom>
         <Type>Two Double Beds</Type>
-        <DailyRate>115</DailyRate>
+        <DailyRate>430</DailyRate>
         <Capacity>2</Capacity>
       </listItemRoom>
       <listItemRoom>
         <Type>One Bedroom Suite</Type>
-        <DailyRate>598</DailyRate>
+        <DailyRate>480</DailyRate>
         <Capacity>6</Capacity>
       </listItemRoom>
     </RoomTypes>
     <ID>4</ID>
     <Name>Mellow Bay Resorts</Name>
-    <Rating>2.5</Rating>
-  </HotelListItem>
-  <HotelListItem>
-    <RoomTypes>
-      <listItemRoom>
-        <Type>Single King Bed</Type>
-        <DailyRate>407</DailyRate>
-        <Capacity>5</Capacity>
-      </listItemRoom>
-      <listItemRoom>
-        <Type>Single Queen Bed</Type>
-        <DailyRate>197</DailyRate>
-        <Capacity>4</Capacity>
-      </listItemRoom>
-      <listItemRoom>
-        <Type>Two Double Beds</Type>
-        <DailyRate>68</DailyRate>
-        <Capacity>2</Capacity>
-      </listItemRoom>
-      <listItemRoom>
-        <Type>One Bedroom Suite</Type>
-        <DailyRate>61</DailyRate>
-        <Capacity>6</Capacity>
-      </listItemRoom>
-    </RoomTypes>
-    <ID>5</ID>
-    <Name>Scarlet Raven Hotel</Name>
     <Rating>3.5</Rating>
   </HotelListItem>
   <HotelListItem>
     <RoomTypes>
       <listItemRoom>
         <Type>Single King Bed</Type>
-        <DailyRate>324</DailyRate>
+        <DailyRate>310</DailyRate>
         <Capacity>5</Capacity>
       </listItemRoom>
       <listItemRoom>
         <Type>Single Queen Bed</Type>
-        <DailyRate>134</DailyRate>
+        <DailyRate>370</DailyRate>
         <Capacity>4</Capacity>
       </listItemRoom>
       <listItemRoom>
         <Type>Two Double Beds</Type>
-        <DailyRate>478</DailyRate>
+        <DailyRate>370</DailyRate>
         <Capacity>2</Capacity>
       </listItemRoom>
       <listItemRoom>
         <Type>One Bedroom Suite</Type>
-        <DailyRate>379</DailyRate>
+        <DailyRate>410</DailyRate>
+        <Capacity>6</Capacity>
+      </listItemRoom>
+    </RoomTypes>
+    <ID>5</ID>
+    <Name>Scarlet Raven Hotel</Name>
+    <Rating>3</Rating>
+  </HotelListItem>
+  <HotelListItem>
+    <RoomTypes>
+      <listItemRoom>
+        <Type>Single King Bed</Type>
+        <DailyRate>520</DailyRate>
+        <Capacity>5</Capacity>
+      </listItemRoom>
+      <listItemRoom>
+        <Type>Single Queen Bed</Type>
+        <DailyRate>610</DailyRate>
+        <Capacity>4</Capacity>
+      </listItemRoom>
+      <listItemRoom>
+        <Type>Two Double Beds</Type>
+        <DailyRate>620</DailyRate>
+        <Capacity>2</Capacity>
+      </listItemRoom>
+      <listItemRoom>
+        <Type>One Bedroom Suite</Type>
+        <DailyRate>680</DailyRate>
         <Capacity>6</Capacity>
       </listItemRoom>
     </RoomTypes>
@@ -193,81 +193,81 @@
     <RoomTypes>
       <listItemRoom>
         <Type>Single King Bed</Type>
-        <DailyRate>50</DailyRate>
+        <DailyRate>160</DailyRate>
         <Capacity>5</Capacity>
       </listItemRoom>
       <listItemRoom>
         <Type>Single Queen Bed</Type>
-        <DailyRate>336</DailyRate>
+        <DailyRate>180</DailyRate>
         <Capacity>4</Capacity>
       </listItemRoom>
       <listItemRoom>
         <Type>Two Double Beds</Type>
-        <DailyRate>447</DailyRate>
+        <DailyRate>180</DailyRate>
         <Capacity>2</Capacity>
       </listItemRoom>
       <listItemRoom>
         <Type>One Bedroom Suite</Type>
-        <DailyRate>316</DailyRate>
+        <DailyRate>200</DailyRate>
         <Capacity>6</Capacity>
       </listItemRoom>
     </RoomTypes>
     <ID>7</ID>
     <Name>Ocean Hotel</Name>
-    <Rating>2</Rating>
+    <Rating>1.5</Rating>
   </HotelListItem>
   <HotelListItem>
     <RoomTypes>
       <listItemRoom>
         <Type>Single King Bed</Type>
-        <DailyRate>280</DailyRate>
+        <DailyRate>160</DailyRate>
         <Capacity>5</Capacity>
       </listItemRoom>
       <listItemRoom>
         <Type>Single Queen Bed</Type>
-        <DailyRate>421</DailyRate>
+        <DailyRate>180</DailyRate>
         <Capacity>4</Capacity>
       </listItemRoom>
       <listItemRoom>
         <Type>Two Double Beds</Type>
-        <DailyRate>131</DailyRate>
+        <DailyRate>180</DailyRate>
         <Capacity>2</Capacity>
       </listItemRoom>
       <listItemRoom>
         <Type>One Bedroom Suite</Type>
-        <DailyRate>574</DailyRate>
+        <DailyRate>200</DailyRate>
         <Capacity>6</Capacity>
       </listItemRoom>
     </RoomTypes>
     <ID>8</ID>
     <Name>Seven Seas Resort</Name>
-    <Rating>3.5</Rating>
+    <Rating>1.5</Rating>
   </HotelListItem>
   <HotelListItem>
     <RoomTypes>
       <listItemRoom>
         <Type>Single King Bed</Type>
-        <DailyRate>270</DailyRate>
+        <DailyRate>360</DailyRate>
         <Capacity>5</Capacity>
       </listItemRoom>
       <listItemRoom>
         <Type>Single Queen Bed</Type>
-        <DailyRate>137</DailyRate>
+        <DailyRate>430</DailyRate>
         <Capacity>4</Capacity>
       </listItemRoom>
       <listItemRoom>
         <Type>Two Double Beds</Type>
-        <DailyRate>513</DailyRate>
+        <DailyRate>430</DailyRate>
         <Capacity>2</Capacity>
       </listItemRoom>
       <listItemRoom>
         <Type>One Bedroom Suite</Type>
-        <DailyRate>590</DailyRate>
+        <DailyRate>480</DailyRate>
         <Capacity>6</Capacity>
       </listItemRoom>
     </RoomTypes>
     <ID>9</ID>
     <Name>Stratosphere Hotel &amp; Spa</Name>
-    <Rating>1.5</Rating>
+    <Rating>3.5</Rating>
   </HotelListItem>
 </ArrayOfHotelListItem>

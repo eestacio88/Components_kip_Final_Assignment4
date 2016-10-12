@@ -26,7 +26,7 @@ namespace Hotel_Reservations
         private void BrowserForm_Load(object sender, EventArgs e)
         {
             String temp = "file://" + appPath + this.URL;
-            Console.WriteLine(temp);
+            //Console.WriteLine(temp);
             this.Text = temp;           
             webBrowserControl.Navigate(temp);
         }

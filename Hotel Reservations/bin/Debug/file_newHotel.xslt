@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="file_newHotel.css" />
       </head>
       <body>
+        <h1>Hotels in the Key West Area</h1>
         <div class="tableParent">
           <table class="hotelsTable">
             <tr>
@@ -25,7 +26,7 @@
   </xsl:template>
 
   <xsl:template match="HotelListItem">
-    <tr>
+    <tr cellspacing="0" class="listItemRow">
       <td class="cellName">
         <xsl:value-of select="Name"/>
       </td>
@@ -67,7 +68,7 @@
         </xsl:choose>
       </td>
       <td class="cellRooms">
-        <table style="border-collapse:collapse;white-space:nowrap; width:740px">
+        <table style="white-space:nowrap; width:740px">
           <tr>
             <xsl:for-each select="RoomTypes/listItemRoom">
               <th class="cellRoomTypeTH">

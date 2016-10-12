@@ -17,14 +17,14 @@ namespace HotelsManagement
         }
 
         public BedType BedSize { get; set; }
-        public int DailyRate { get; set; }
+        public double DailyRate { get; set; }
         public int Capacity { get; set; }
         //public int Current { get; set; }
         //public String Name { get; set; }
 
         public Room() { }
 
-        public Room(BedType bedSize, int DailyRate, int capacity)
+        public Room(BedType bedSize, double DailyRate, int capacity)
         {
             this.BedSize = bedSize;
             this.Capacity = capacity;

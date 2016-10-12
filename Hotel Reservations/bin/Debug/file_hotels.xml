@@ -4,22 +4,22 @@
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>454</DailyRate>
+        <DailyRate>420</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>685</DailyRate>
+        <DailyRate>490</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>668</DailyRate>
+        <DailyRate>490</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>467</DailyRate>
+        <DailyRate>540</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -27,53 +27,14 @@
     <Name>Bronze Nebula Hotel &amp; Spa</Name>
     <Address>1600 N Lakeline Blvd #1726, Cedar Park, TX, 78613</Address>
     <Features>
-      <Laundry>true</Laundry>
-      <AirConditioning>false</AirConditioning>
-      <Shuttle>false</Shuttle>
-      <Breakfast>true</Breakfast>
-      <Distances>
-        <Beach>0.06</Beach>
-        <Shopping>4.08</Shopping>
-        <Airport>4.63</Airport>
-      </Distances>
-    </Features>
-    <Rating>1.5</Rating>
-  </Hotel>
-  <Hotel>
-    <RoomList>
-      <Room>
-        <BedSize>KB</BedSize>
-        <DailyRate>237</DailyRate>
-        <Capacity>5</Capacity>
-      </Room>
-      <Room>
-        <BedSize>QB</BedSize>
-        <DailyRate>254</DailyRate>
-        <Capacity>4</Capacity>
-      </Room>
-      <Room>
-        <BedSize>DB</BedSize>
-        <DailyRate>68</DailyRate>
-        <Capacity>2</Capacity>
-      </Room>
-      <Room>
-        <BedSize>BS</BedSize>
-        <DailyRate>538</DailyRate>
-        <Capacity>6</Capacity>
-      </Room>
-    </RoomList>
-    <ID>1</ID>
-    <Name>Lord's Valley Hotel</Name>
-    <Address>11 Logan Pl, Mastic, NY, 11950</Address>
-    <Features>
       <Laundry>false</Laundry>
-      <AirConditioning>false</AirConditioning>
-      <Shuttle>false</Shuttle>
+      <AirConditioning>true</AirConditioning>
+      <Shuttle>true</Shuttle>
       <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>0.27</Beach>
-        <Shopping>2.3</Shopping>
-        <Airport>3.95</Airport>
+        <Beach>2.21</Beach>
+        <Shopping>0.24</Shopping>
+        <Airport>0.55</Airport>
       </Distances>
     </Features>
     <Rating>4</Rating>
@@ -82,22 +43,61 @@
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>235</DailyRate>
+        <DailyRate>260</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>434</DailyRate>
+        <DailyRate>310</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>134</DailyRate>
+        <DailyRate>310</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>264</DailyRate>
+        <DailyRate>340</DailyRate>
+        <Capacity>6</Capacity>
+      </Room>
+    </RoomList>
+    <ID>1</ID>
+    <Name>Lord's Valley Hotel</Name>
+    <Address>11 Logan Pl, Mastic, NY, 11950</Address>
+    <Features>
+      <Laundry>false</Laundry>
+      <AirConditioning>true</AirConditioning>
+      <Shuttle>true</Shuttle>
+      <Breakfast>true</Breakfast>
+      <Distances>
+        <Beach>0.27</Beach>
+        <Shopping>2.82</Shopping>
+        <Airport>1.62</Airport>
+      </Distances>
+    </Features>
+    <Rating>2.5</Rating>
+  </Hotel>
+  <Hotel>
+    <RoomList>
+      <Room>
+        <BedSize>KB</BedSize>
+        <DailyRate>210</DailyRate>
+        <Capacity>5</Capacity>
+      </Room>
+      <Room>
+        <BedSize>QB</BedSize>
+        <DailyRate>240</DailyRate>
+        <Capacity>4</Capacity>
+      </Room>
+      <Room>
+        <BedSize>DB</BedSize>
+        <DailyRate>250</DailyRate>
+        <Capacity>2</Capacity>
+      </Room>
+      <Room>
+        <BedSize>BS</BedSize>
+        <DailyRate>270</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -106,37 +106,37 @@
     <Address>3583 Bayview Ave, Saint James City, FL, 33956</Address>
     <Features>
       <Laundry>true</Laundry>
-      <AirConditioning>false</AirConditioning>
+      <AirConditioning>true</AirConditioning>
       <Shuttle>false</Shuttle>
       <Breakfast>false</Breakfast>
       <Distances>
-        <Beach>2.3</Beach>
-        <Shopping>3.5</Shopping>
-        <Airport>4.14</Airport>
+        <Beach>2.19</Beach>
+        <Shopping>0.85</Shopping>
+        <Airport>0.87</Airport>
       </Distances>
     </Features>
-    <Rating>3</Rating>
+    <Rating>2</Rating>
   </Hotel>
   <Hotel>
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>433</DailyRate>
+        <DailyRate>470</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>362</DailyRate>
+        <DailyRate>550</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>78</DailyRate>
+        <DailyRate>550</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>304</DailyRate>
+        <DailyRate>610</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -147,11 +147,11 @@
       <Laundry>true</Laundry>
       <AirConditioning>true</AirConditioning>
       <Shuttle>true</Shuttle>
-      <Breakfast>false</Breakfast>
+      <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>4.66</Beach>
-        <Shopping>3.76</Shopping>
-        <Airport>3.86</Airport>
+        <Beach>4.1</Beach>
+        <Shopping>0.44</Shopping>
+        <Airport>4.01</Airport>
       </Distances>
     </Features>
     <Rating>4.5</Rating>
@@ -160,22 +160,22 @@
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>333</DailyRate>
+        <DailyRate>360</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>200</DailyRate>
+        <DailyRate>430</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>115</DailyRate>
+        <DailyRate>430</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>598</DailyRate>
+        <DailyRate>480</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -183,38 +183,38 @@
     <Name>Mellow Bay Resorts</Name>
     <Address>3 Elm Pvt Dr, Somerville, AL, 35670</Address>
     <Features>
-      <Laundry>true</Laundry>
-      <AirConditioning>true</AirConditioning>
-      <Shuttle>true</Shuttle>
-      <Breakfast>true</Breakfast>
+      <Laundry>false</Laundry>
+      <AirConditioning>false</AirConditioning>
+      <Shuttle>false</Shuttle>
+      <Breakfast>false</Breakfast>
       <Distances>
-        <Beach>2.66</Beach>
-        <Shopping>3.76</Shopping>
-        <Airport>3.8</Airport>
+        <Beach>2.06</Beach>
+        <Shopping>3.3</Shopping>
+        <Airport>3</Airport>
       </Distances>
     </Features>
-    <Rating>2.5</Rating>
+    <Rating>3.5</Rating>
   </Hotel>
   <Hotel>
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>407</DailyRate>
+        <DailyRate>310</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>197</DailyRate>
+        <DailyRate>370</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>68</DailyRate>
+        <DailyRate>370</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>61</DailyRate>
+        <DailyRate>410</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -224,36 +224,36 @@
     <Features>
       <Laundry>true</Laundry>
       <AirConditioning>true</AirConditioning>
-      <Shuttle>false</Shuttle>
+      <Shuttle>true</Shuttle>
       <Breakfast>false</Breakfast>
       <Distances>
-        <Beach>1.78</Beach>
-        <Shopping>0.31</Shopping>
-        <Airport>1.26</Airport>
+        <Beach>1.02</Beach>
+        <Shopping>4.45</Shopping>
+        <Airport>0.5</Airport>
       </Distances>
     </Features>
-    <Rating>3.5</Rating>
+    <Rating>3</Rating>
   </Hotel>
   <Hotel>
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>324</DailyRate>
+        <DailyRate>520</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>134</DailyRate>
+        <DailyRate>610</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>478</DailyRate>
+        <DailyRate>620</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>379</DailyRate>
+        <DailyRate>680</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -261,14 +261,14 @@
     <Name>Emerald Hotel</Name>
     <Address>1015 W Sam Houston St, Pharr, TX, 78557</Address>
     <Features>
-      <Laundry>true</Laundry>
+      <Laundry>false</Laundry>
       <AirConditioning>false</AirConditioning>
       <Shuttle>false</Shuttle>
-      <Breakfast>true</Breakfast>
+      <Breakfast>false</Breakfast>
       <Distances>
-        <Beach>0.81</Beach>
-        <Shopping>4.85</Shopping>
-        <Airport>1.38</Airport>
+        <Beach>3.35</Beach>
+        <Shopping>2.56</Shopping>
+        <Airport>1.62</Airport>
       </Distances>
     </Features>
     <Rating>5</Rating>
@@ -277,22 +277,22 @@
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>50</DailyRate>
+        <DailyRate>160</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>336</DailyRate>
+        <DailyRate>180</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>447</DailyRate>
+        <DailyRate>180</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>316</DailyRate>
+        <DailyRate>200</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -305,33 +305,33 @@
       <Shuttle>false</Shuttle>
       <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>4.47</Beach>
-        <Shopping>2.51</Shopping>
-        <Airport>1.89</Airport>
+        <Beach>0.18</Beach>
+        <Shopping>3.08</Shopping>
+        <Airport>0.53</Airport>
       </Distances>
     </Features>
-    <Rating>2</Rating>
+    <Rating>1.5</Rating>
   </Hotel>
   <Hotel>
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>280</DailyRate>
+        <DailyRate>160</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>421</DailyRate>
+        <DailyRate>180</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>131</DailyRate>
+        <DailyRate>180</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>574</DailyRate>
+        <DailyRate>200</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -341,36 +341,36 @@
     <Features>
       <Laundry>true</Laundry>
       <AirConditioning>true</AirConditioning>
-      <Shuttle>true</Shuttle>
-      <Breakfast>false</Breakfast>
+      <Shuttle>false</Shuttle>
+      <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>0.14</Beach>
-        <Shopping>1.16</Shopping>
-        <Airport>4.2</Airport>
+        <Beach>3.29</Beach>
+        <Shopping>3.63</Shopping>
+        <Airport>0.28</Airport>
       </Distances>
     </Features>
-    <Rating>3.5</Rating>
+    <Rating>1.5</Rating>
   </Hotel>
   <Hotel>
     <RoomList>
       <Room>
         <BedSize>KB</BedSize>
-        <DailyRate>270</DailyRate>
+        <DailyRate>360</DailyRate>
         <Capacity>5</Capacity>
       </Room>
       <Room>
         <BedSize>QB</BedSize>
-        <DailyRate>137</DailyRate>
+        <DailyRate>430</DailyRate>
         <Capacity>4</Capacity>
       </Room>
       <Room>
         <BedSize>DB</BedSize>
-        <DailyRate>513</DailyRate>
+        <DailyRate>430</DailyRate>
         <Capacity>2</Capacity>
       </Room>
       <Room>
         <BedSize>BS</BedSize>
-        <DailyRate>590</DailyRate>
+        <DailyRate>480</DailyRate>
         <Capacity>6</Capacity>
       </Room>
     </RoomList>
@@ -378,16 +378,16 @@
     <Name>Stratosphere Hotel &amp; Spa</Name>
     <Address>8454 Wright St, Fort Campbell, KY, 42223</Address>
     <Features>
-      <Laundry>true</Laundry>
+      <Laundry>false</Laundry>
       <AirConditioning>true</AirConditioning>
       <Shuttle>true</Shuttle>
       <Breakfast>true</Breakfast>
       <Distances>
-        <Beach>2.19</Beach>
-        <Shopping>2.7</Shopping>
-        <Airport>1.38</Airport>
+        <Beach>1.22</Beach>
+        <Shopping>0.56</Shopping>
+        <Airport>2.87</Airport>
       </Distances>
     </Features>
-    <Rating>1.5</Rating>
+    <Rating>3.5</Rating>
   </Hotel>
 </ArrayOfHotel>
