@@ -64,9 +64,36 @@ namespace Hotel_Reservations
 
             Random r = new Random();
 
+            List<double> ratingValues = new List<double>();
+            ratingValues.Add(1.5);
+            ratingValues.Add(2);
+            ratingValues.Add(2.5);
+            ratingValues.Add(3);
+            ratingValues.Add(3.5);
+            ratingValues.Add(4);
+            ratingValues.Add(4.5);
+            ratingValues.Add(5);
+
             for (int i = 0; i < amountOfHotels; i++)
             {
-                Hotel hotel = new Hotel(i, hotelNames[i], hotelAddresses[i]);
+
+                double rating = 1.5;
+
+                if (ratingValues.Count > 0)
+                {
+                    int randomIndex = r.Next(ratingValues.Count);
+                    rating = ratingValues[randomIndex];
+                    ratingValues.Remove(rating);
+                }
+                else
+                {
+                    rating = r.Next(1, 5);
+                    rating = (r.NextDouble() < 0.5) ? rating + 0.5 : rating;
+                    if (rating <= 1) rating = 1.5;
+                    if (rating > 5) rating = 5;
+                }
+
+                Hotel hotel = new Hotel(i, hotelNames[i], hotelAddresses[i], rating);
                 hotel.Features = new Features(
                     (r.NextDouble() < 0.5) ? true : false,
                     (r.NextDouble() < 0.5) ? true : false,
@@ -205,41 +232,17 @@ namespace Hotel_Reservations
             this.newHotel_list = new List<HotelListItem>();
             //HotelListItem Item = null;
             Random r = new Random();
-
-            List<double> ratingValues = new List<double>();
-            ratingValues.Add(1.5);
-            ratingValues.Add(2);
-            ratingValues.Add(2.5);
-            ratingValues.Add(3);
-            ratingValues.Add(3.5);
-            ratingValues.Add(4);
-            ratingValues.Add(4.5);
-            ratingValues.Add(5);
-
+            
             for (int h = 0; h < hotel_list.Count; h++)
             {
                 //Grab the hotel
                 Hotel hotel = hotel_list[h];
-                double rating = 1.5;
-
-                if (ratingValues.Count > 0)
-                {
-                    int randomIndex = r.Next(ratingValues.Count);
-                    rating = ratingValues[randomIndex];
-                    ratingValues.Remove(rating);
-                }
-                else
-                {
-                    rating = r.Next(1, 5);
-                    rating = (r.NextDouble() < 0.5) ? rating + 0.5 : rating;
-                    if (rating <= 1) rating = 1.5;
-                    if (rating > 5) rating = 5;
-                }
+               
 
                 //System.Console.Out.WriteLine(rating);
 
                 //Create the list item
-                HotelListItem Item = new HotelListItem(hotel.ID, hotel.Name, rating);
+                HotelListItem Item = new HotelListItem(hotel.ID, hotel.Name, hotel.Rating);
 
                 //Create its room
                 listItemRoom room;

@@ -15,7 +15,7 @@ namespace HotelsManagement
 
         public HotelListItem() { }
 
-        public HotelListItem(int id, String name, Double rating)
+        public HotelListItem(int id, String name, Double rating = 1.0)
         {
             this.ID = id;
             this.Name = name;
