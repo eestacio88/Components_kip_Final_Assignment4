@@ -58,3 +58,6 @@ C:\Users\TerryJean\Documents\GitHub\HotelReservations_Kip_Components_2\Hotel Res
 C:\Users\TerryJean\Documents\GitHub\HotelReservations_Kip_Components_2\Hotel Reservations\bin\Debug\Hotel Reservations.pdb
 C:\Users\TerryJean\Documents\GitHub\HotelReservations_Kip_Components_2\Hotel Reservations\bin\Debug\HotelsManagement.dll
 C:\Users\TerryJean\Documents\GitHub\HotelReservations_Kip_Components_2\Hotel Reservations\bin\Debug\HotelsManagement.pdb
+C:\Users\TerryJean\Documents\GitHub\HotelReservations_Kip_Components_3\Hotel Reservations\bin\Debug\Hotel Reservations.exe.config
+C:\Users\TerryJean\Documents\GitHub\HotelReservations_Kip_Components_3\Hotel Reservations\obj\Debug\Hotel Reservations.exe
+C:\Users\TerryJean\Documents\GitHub\HotelReservations_Kip_Components_3\Hotel Reservations\obj\Debug\Hotel Reservations.pdb
