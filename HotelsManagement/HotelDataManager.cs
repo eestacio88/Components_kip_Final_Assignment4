@@ -305,5 +305,10 @@ namespace HotelsManagement
             number += (remainder < interval / 2) ? -remainder : (interval - remainder);
             return number;
         }
+
+        bool ReserveRoom(ReservationType reservation)
+        {
+            return false;
+        }
     }
 }

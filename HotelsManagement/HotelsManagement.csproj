@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="HotelListItem.cs" />
     <Compile Include="listItemRoom.cs" />
+    <Compile Include="ReservationType.cs" />
     <Compile Include="RoomType.cs" />
     <Compile Include="Distances.cs" />
     <Compile Include="Features.cs" />

@@ -74,14 +74,25 @@ namespace Hotel_Reservations
         private void btnLoadHotel_Click(object sender, EventArgs e)
         {
 
-            String result = this.hotelManager.generateHotelListItems(roomtypes_filePath, hotels_filePath, new_hotels_filePath);
-            lblStatus.Text = "Operation - " + result;
+            
         }
 
         private void btnCreateNewHotel_Click(object sender, EventArgs e)
         {
-            try {
-                XslCompiledTransform xslt = new XslCompiledTransform();
+            
+        }
+
+        private void loadHotelsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            String result = this.hotelManager.generateHotelListItems(roomtypes_filePath, hotels_filePath, new_hotels_filePath);
+            lblStatus.Text = "Operation - " + result;
+        }
+
+        private void createNewHotelsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                XslCompiledTransform xslt = new XslCompiledTransform(); 
                 xslt.Load(xslt_path);
                 xslt.Transform(new_hotels_filePath, xsl_html_file_path);
 
@@ -90,7 +101,8 @@ namespace Hotel_Reservations
                 frm.ShowDialog();
 
                 lblStatus.Text = "Operation - Successful!";
-            }catch(Exception err)
+            }
+            catch (Exception err)
             {
                 lblStatus.Text = "Operation - " + err.Message;
                 System.Console.Out.WriteLine(err.Message);
