@@ -193,6 +193,7 @@ namespace Hotel_Reservations
                             //System.Console.Out.WriteLine(hotel.Name + " | " + item.Date + " | Type:" + type + " | Result: " + reserve_result);
 
                             reservation.reservationId = (this.hotelManager.reservations.Count + 1) + "";
+
                             this.hotelManager.reservations.Add(reservation);
                             result = reservation.result.ToString();
 

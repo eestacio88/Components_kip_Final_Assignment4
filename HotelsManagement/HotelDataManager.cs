@@ -156,7 +156,7 @@ namespace HotelsManagement
 
                             //Create the inventory instance
                             inventory = new InventoryType(hotel.ID, dt);
-                            inventory.Quantity = 3; //r.Next(1, 6);
+                            inventory.Quantity = 3; //r.Next(3, 5);
 
                             //Cast int to enum
                             inventory.RoomType = (Room.BedType)rb;
@@ -308,6 +308,21 @@ namespace HotelsManagement
 
         public bool ReserveRoom(ReservationType reservation)
         {
+            /*
+            //Compare the amount of days requested against max rooms for that type
+            InventoryType inventory = this.inventory.Find(x => 
+                x.HotelId == reservation.hotelId && 
+                x.RoomType == reservation.roomType && 
+                x.Date == reservation.startDate);
+
+            if (inventory != null && reservation.numDays > inventory.Quantity)
+            {
+                reservation.result = ReservationResultType.RoomNotAvailable;
+                return false;
+            }
+            */
+            //System.Console.Out.WriteLine(inventory.Quantity);
+
             //Loop through existing reservations
             int reservation_count = this.reservations.Count;
 
@@ -315,11 +330,12 @@ namespace HotelsManagement
             {
                 foreach(ReservationType _reservation in this.reservations)
                 {
-                    
                     //Find any matching reservations
                     if (_reservation.hotelId == reservation.hotelId
-                        && _reservation.roomType == reservation.roomType)
-                    {
+                        && _reservation.roomType == reservation.roomType
+                        && _reservation.result == ReservationResultType.Success)
+                    {                       
+
                         //Create a list of booked days by the reservation
                         List<String> dateList_1 = CreateDateList(_reservation.startDate, _reservation.numDays);
                         List<String> dateList_2 = CreateDateList(reservation.startDate, reservation.numDays);
@@ -334,6 +350,7 @@ namespace HotelsManagement
                                 if (date2 == date1) matches++;                              
                         }
 
+                        
                         if (matches > 0)
                         {
                             reservation.result = ReservationResultType.RoomNotAvailable;
