@@ -12,13 +12,13 @@ namespace HotelsManagement
         public String Date { get; set; }
         public int HotelId { get; set; }
         public Room.BedType RoomType { get; set; }
-        public int Quantity { get; set; }
+        public int Quantity { get; set; } //The amount of bedtype rooms the hotel has
 
         public InventoryType() { }
 
         public InventoryType(int hotelid, DateTime date, Room.BedType bedtype = Room.BedType.DB, int quantity = 0)
         {
-            this.Date = date.ToShortDateString();
+            this.Date = date.ToString("yyyyMMdd");
             this.HotelId = hotelid;
             this.RoomType = bedtype;
             this.Quantity = quantity;

@@ -13,6 +13,8 @@ namespace HotelsManagement
     {
         public List<Hotel> hotels;
         public List<InventoryType> inventory;
+        public List<HotelListItem> new_hotels;
+        public List<ReservationType> reservations;
         private StreamWriter streamWriter;
         public StreamReader streamReader;
         private XmlSerializer xmlWriter;
@@ -26,6 +28,7 @@ namespace HotelsManagement
             //Create the default list of hotels
             hotels = new List<Hotel>();
             inventory = new List<InventoryType>();
+            reservations = new List<ReservationType>();
         }
 
         public void generateHotels()
@@ -153,7 +156,7 @@ namespace HotelsManagement
 
                             //Create the inventory instance
                             inventory = new InventoryType(hotel.ID, dt);
-                            inventory.Quantity = r.Next(0, 6);
+                            inventory.Quantity = 3; //r.Next(1, 6);
 
                             //Cast int to enum
                             inventory.RoomType = (Room.BedType)rb;
@@ -282,19 +285,16 @@ namespace HotelsManagement
 
                 this.streamReader = new StreamReader(filePath);
                 this.xmlWriter = new XmlSerializer(list.GetType());
-
-                //System.Console.WriteLine("List Type: " + list.GetType());
                        
                 result = "File read operation was successful!";
-               
-                //xmlStream.Close();
+
                 return (List<T>)this.xmlWriter.Deserialize(this.streamReader);
             }
             catch(Exception error)
             {
                 result = "File read operation failed: " + error;
             }
-
+             
             return null;
            
         }
@@ -306,9 +306,86 @@ namespace HotelsManagement
             return number;
         }
 
-        bool ReserveRoom(ReservationType reservation)
+        public bool ReserveRoom(ReservationType reservation)
         {
+            //Loop through existing reservations
+            int reservation_count = this.reservations.Count;
+
+            if (reservation_count > 0)
+            {
+                foreach(ReservationType _reservation in this.reservations)
+                {
+                    
+                    //Find any matching reservations
+                    if (_reservation.hotelId == reservation.hotelId
+                        && _reservation.roomType == reservation.roomType)
+                    {
+                        //Create a list of booked days by the reservation
+                        List<String> dateList_1 = CreateDateList(_reservation.startDate, _reservation.numDays);
+                        List<String> dateList_2 = CreateDateList(reservation.startDate, reservation.numDays);
+
+                        //Counter for any room date matches
+                        int matches = 0;
+
+                        //Compare the date lists for any date matches from the reservations 
+                        foreach (String date1 in dateList_1)
+                        {
+                            foreach (String date2 in dateList_2)
+                                if (date2 == date1) matches++;                              
+                        }
+
+                        if (matches > 0)
+                        {
+                            reservation.result = ReservationResultType.RoomNotAvailable;
+                            //System.Console.Out.WriteLine("Matches Found - " + matches);
+                            return false;
+                        }
+                        else
+                        {
+                            reservation.result = ReservationResultType.Success;
+                            return true;
+                        }
+
+                    }else
+                    {
+                        //No matching reservations. It's good to go.
+                        reservation.result = ReservationResultType.Success;
+                        return true;
+                    }
+                }
+
+                
+            }
+            else
+            {
+                //There are no reservations so just attempt to add it to the list;
+                reservation.result = ReservationResultType.Success;
+                return true;
+            }
+
             return false;
         }
+
+        //Credit - Kip Irvine
+        //Creates a list of string dates from a starting date and number of days
+        public List<String> CreateDateList(string startDate, int numDays)
+        {
+            List<String> result = new List<String>();
+            result.Add(startDate);
+            int year = Convert.ToInt32(startDate.Substring(0, 4));
+            int month = Convert.ToInt32(startDate.Substring(4, 2));
+            int day = Convert.ToInt32(startDate.Substring(6, 2));
+            DateTime current = new DateTime(year, month, day);
+
+            for (int i = 1; i < numDays; i++)
+            {
+                current = current.AddDays(1);
+                result.Add(current.ToString("yyyyMMdd"));
+            }
+
+            return result;
+        }
+
+
     }
 }

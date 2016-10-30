@@ -5,25 +5,26 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace HotelsManagement
-{
-    class ReservationType
+{ 
+    public class ReservationType
     {
-        public String hotelId { get; set; }
+        public int hotelId { get; set; }
         public String startDate { get; set; }
         public int numDays { get; set; }
         public String customerId { get; set; }
-        public String roomType { get; set; }
+        public Room.BedType roomType { get; set; }
         public String reservationId { get; set; }
         public double cost { get; set; }
-        ReservationResultType result;
+        public ReservationResultType result;
     }
 
-    enum ReservationResultType
+    public enum ReservationResultType
     {
         Success,
         RoomNotAvailable,
         UnknownHotelId,
-        UnknownRoomType
+        UnknownRoomType,
+        NULL
     }
 
     

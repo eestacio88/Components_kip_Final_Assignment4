@@ -13,7 +13,8 @@ namespace HotelsManagement
             KB,
             QB,
             DB,
-            BS
+            BS,
+            NULL
         }
 
         public BedType BedSize { get; set; }
