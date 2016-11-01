@@ -88,6 +88,7 @@ namespace Hotel_Reservations
             //this.hotelManager.reservations = this.hotelManager.readFromXML(out result, this.hotelManager.reservations, inventories_filePath);
 
             // hotelID, date, number of days, customer ID, room type
+            
             reserveRoom("0001", "20160905", 1, "00001", "KB");
             reserveRoom("0001", "20160905", 4, "00002", "KB");
             reserveRoom("0001", "20160905", 5, "00003", "KB");
@@ -104,6 +105,7 @@ namespace Hotel_Reservations
             reserveRoom("0005", "20160909", 3, "00014", "KB");
             reserveRoom("0005", "20160905", 1, "00015", "AB"); // fails- unknown room type
             reserveRoom("000999", "20160905", 1, "00016", "DB"); // fails- unknown hotel ID
+            
 
             /*
             reserveRoom(0, "20160905", 4, 1, "KB");
@@ -144,11 +146,11 @@ namespace Hotel_Reservations
                     }
                 }
 
+                //Check for any unknown room types
                 if (bedType == null || type == Room.BedType.NULL)
                 {
                     res_result = ReservationResultType.UnknownRoomType;
                     result = res_result.ToString();        
-                    //return "Fail - Unknown Room Type";
                 }
 
                 //Check if a hotel exists
@@ -158,17 +160,22 @@ namespace Hotel_Reservations
                 {
                     
                     res_result = ReservationResultType.UnknownHotelId;
-                    result = res_result.ToString();
-                    //return "Fail - Unknown Hotel ID";
+                    result = res_result.ToString();                   
                 }
 
-                //Check for valid dates in inventory
-                InventoryType inventory = this.hotelManager.inventory.Find(x => x.Date == date);
-                if (inventory == null)
+                //Check for valid dates in inventory from the incoming reservation
+                List<String> dateList_1 = this.hotelManager.CreateDateList(date, numOfDays);
+
+                foreach (String date1 in dateList_1)
                 {
-                    //Invalid date
-                    res_result = ReservationResultType.RoomNotAvailable;
-                    result = res_result.ToString();
+                    InventoryType inventory = this.hotelManager.inventory.Find(x => x.Date == date1);
+
+                    if (inventory == null)
+                    {                      
+                        //Invalid date so the room is not available
+                        res_result = ReservationResultType.RoomNotAvailable;
+                        result = res_result.ToString();
+                    }
                 }
 
                 //Loop through the room inventories
@@ -188,13 +195,27 @@ namespace Hotel_Reservations
                             reservation.startDate = date;
                             reservation.result = res_result;
 
+                            //System.Console.Out.WriteLine(res_result);
+
                             //Create the reservation object
-                            Boolean reserve_result = this.hotelManager.ReserveRoom(reservation);
+                            if (res_result == ReservationResultType.NULL)
+                            {
+                                this.hotelManager.ReserveRoom(reservation);
+
+                                //The reservation was a success
+                                if (reservation.result == ReservationResultType.Success)
+                                {
+                                    //Set the id
+                                    reservation.reservationId = (this.hotelManager.reservations.Count + 1) + "";
+                                }
+                            }
+
                             //System.Console.Out.WriteLine(hotel.Name + " | " + item.Date + " | Type:" + type + " | Result: " + reserve_result);
 
-                            reservation.reservationId = (this.hotelManager.reservations.Count + 1) + "";
-
                             this.hotelManager.reservations.Add(reservation);
+
+                            //System.Console.Out.WriteLine(reservation.result.ToString());
+
                             result = reservation.result.ToString();
 
                             System.Console.Out.WriteLine("RESULT: " + result + " | " + reservation.reservationId);

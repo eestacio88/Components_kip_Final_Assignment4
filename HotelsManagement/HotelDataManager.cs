@@ -323,6 +323,16 @@ namespace HotelsManagement
             */
             //System.Console.Out.WriteLine(inventory.Quantity);
 
+            //Check if any days exceed the current month
+            List<String> dateList_2 = CreateDateList(reservation.startDate, reservation.numDays);
+
+            foreach (ReservationType _reservation in this.reservations)
+                foreach (String date2 in dateList_2)
+                {
+                    int month = Convert.ToInt32(date2.Substring(4, 2));
+                    //System.Console.Out.WriteLine("Month" + month);
+                }
+
             //Loop through existing reservations
             int reservation_count = this.reservations.Count;
 
@@ -338,8 +348,7 @@ namespace HotelsManagement
 
                         //Create a list of booked days by the reservation
                         List<String> dateList_1 = CreateDateList(_reservation.startDate, _reservation.numDays);
-                        List<String> dateList_2 = CreateDateList(reservation.startDate, reservation.numDays);
-
+                        
                         //Counter for any room date matches
                         int matches = 0;
 
