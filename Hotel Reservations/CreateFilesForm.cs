@@ -27,6 +27,7 @@ namespace Hotel_Reservations
         public String new_hotels_filePath = "../../file_new_hotels.xml";
         public String inventories_filePath = "../../file_roominventory.xml";
         public String roomtypes_filePath = "../../roomtypes.xml";
+        public String reservations_filePath = "../../file_reservations.xml";
 
         String xslt_path = "../../file_newHotel.xslt";
         const string xsl_html_file_path = "../../file_new_hotels.html";
@@ -76,6 +77,12 @@ namespace Hotel_Reservations
         {
             //Load the new hotels xml
             String result = "";
+
+            //Load the hotels (Used for cost)
+            this.hotelManager.hotels = new List<Hotel>();
+            this.hotelManager.hotels = this.hotelManager.readFromXML(out result, this.hotelManager.hotels, hotels_filePath);
+
+            //Load the new hotels
             this.hotelManager.new_hotels = new List<HotelListItem>();
             this.hotelManager.new_hotels = this.hotelManager.readFromXML(out result, this.hotelManager.new_hotels, new_hotels_filePath);
 
@@ -86,36 +93,7 @@ namespace Hotel_Reservations
             //Load any reservations
             //this.hotelManager.reservations = new List<InventoryType>();
             //this.hotelManager.reservations = this.hotelManager.readFromXML(out result, this.hotelManager.reservations, inventories_filePath);
-
-            // hotelID, date, number of days, customer ID, room type
-            
-            reserveRoom("0001", "20160905", 1, "00001", "KB");
-            reserveRoom("0001", "20160905", 4, "00002", "KB");
-            reserveRoom("0001", "20160905", 5, "00003", "KB");
-            reserveRoom("0001", "20160907", 3, "00004", "KB");
-            reserveRoom("0001", "20160909", 4, "00005", "KB");
-            reserveRoom("0001", "20160906", 5, "00006", "KB"); // fails - room not available
-            reserveRoom("0001", "20160905", 1, "00007", "QB");
-            reserveRoom("0001", "20160905", 1, "00008", "KB"); // fails- room not available
-            reserveRoom("0001", "20160905", 4, "00009", "QB");
-            reserveRoom("0001", "20170905", 1, "00010", "KB"); // fails- room not available
-            reserveRoom("0005", "20160915", 5, "00011", "QB");
-            reserveRoom("0005", "20160925", 10, "00012", "QB"); // fails- room not available
-            reserveRoom("0005", "20160907", 3, "00013", "QB");
-            reserveRoom("0005", "20160909", 3, "00014", "KB");
-            reserveRoom("0005", "20160905", 1, "00015", "AB"); // fails- unknown room type
-            reserveRoom("000999", "20160905", 1, "00016", "DB"); // fails- unknown hotel ID
-            
-
-            /*
-            reserveRoom(0, "20160905", 4, 1, "KB");
-            reserveRoom(0, "20160905", 4, 1, "QB");
-            reserveRoom(0, "20160911", 2, 1, "KB");
-            reserveRoom(0, "20160905", 4, 1, "KB");
-            reserveRoom(-1, "20160905", 4, 1, "KB");
-            reserveRoom(0, "20160905", 4, 1, "VB");
-            */
-            //reserveRoom(0, "20160905", 2, 1,"KB");
+           
             lblStatus.Text = result;
         }
 
@@ -126,13 +104,18 @@ namespace Hotel_Reservations
 
         private String reserveRoom(int hotelId, String date, int numOfDays, String customerId, String bedType)
         {
+            //Reservation result output
             String result = "";
 
             try
             {
+                //Declare the result and bed type as null
                 Room.BedType type = Room.BedType.NULL;
                 ReservationResultType res_result = ReservationResultType.NULL;
 
+                //Create the reservation object
+                ReservationType reservation = new ReservationType();
+ 
                 //Setup the bed type
                 if (bedType != null)
                 {
@@ -146,6 +129,13 @@ namespace Hotel_Reservations
                     }
                 }
 
+                //Set the reservation properties
+                reservation.hotelId = hotelId;
+                reservation.numDays = numOfDays;
+                reservation.roomType = type;
+                reservation.startDate = date;
+                reservation.customerId = customerId;
+
                 //Check for any unknown room types
                 if (bedType == null || type == Room.BedType.NULL)
                 {
@@ -155,12 +145,14 @@ namespace Hotel_Reservations
 
                 //Check if a hotel exists
                 HotelListItem hotel = this.hotelManager.new_hotels.Find(x => x.ID == hotelId);
-                ReservationType reservation = new ReservationType();
+
                 if (hotel == null)
                 {
-                    
                     res_result = ReservationResultType.UnknownHotelId;
-                    result = res_result.ToString();                   
+                    result = res_result.ToString();
+
+                    //Add to the reservations list
+                    this.hotelManager.reservations.Add(reservation);
                 }
 
                 //Check for valid dates in inventory from the incoming reservation
@@ -178,6 +170,9 @@ namespace Hotel_Reservations
                     }
                 }
 
+                //Set the reservation result
+                reservation.result = res_result;
+
                 //Loop through the room inventories
                 foreach (InventoryType item in this.hotelManager.inventory)
                 {
@@ -187,17 +182,9 @@ namespace Hotel_Reservations
                     if (hotel != null)
                     {
                         //Check to see if the incoming hotel id and incoming date are valid
-                        if (hotel.ID == hotelId && item.Date == date && type != Room.BedType.NULL)
-                        {
-                            reservation.hotelId = hotelId;
-                            reservation.numDays = numOfDays;
-                            reservation.roomType = type;
-                            reservation.startDate = date;
-                            reservation.result = res_result;
-
-                            //System.Console.Out.WriteLine(res_result);
-
-                            //Create the reservation object
+                        if (hotel.ID == hotelId && item.Date == date)
+                        {       
+                            //Check the current reservation result
                             if (res_result == ReservationResultType.NULL)
                             {
                                 this.hotelManager.ReserveRoom(reservation);
@@ -207,22 +194,33 @@ namespace Hotel_Reservations
                                 {
                                     //Set the id
                                     reservation.reservationId = (this.hotelManager.reservations.Count + 1) + "";
+
+                                    //Get the costs
+                                    Hotel costHotel = this.hotelManager.hotels.Find(x => x.ID == reservation.hotelId);
+                                    if (costHotel != null)
+                                    {
+                                        //Grab the room lists and appropriate room type from the hotel
+                                        List<Room> costRoomList = costHotel.RoomList;
+                                        Room costRoom = costRoomList.Find(x => x.BedSize == reservation.roomType);
+                                        
+                                        if (costRoom != null)
+                                        {
+                                            //Multiply rate by days
+                                            reservation.cost = costRoom.DailyRate * reservation.numDays;
+                                        }
+                                    }
                                 }
                             }
-
-                            //System.Console.Out.WriteLine(hotel.Name + " | " + item.Date + " | Type:" + type + " | Result: " + reserve_result);
-
-                            this.hotelManager.reservations.Add(reservation);
-
-                            //System.Console.Out.WriteLine(reservation.result.ToString());
-
                             result = reservation.result.ToString();
 
-                            System.Console.Out.WriteLine("RESULT: " + result + " | " + reservation.reservationId);
+                            //Add to the reservations list
+                            this.hotelManager.reservations.Add(reservation);
+
+                            System.Console.Out.WriteLine("RESULT: " + result);
                             return result;
                         }
+
                     }
-                    
                 }
 
             }
@@ -238,7 +236,27 @@ namespace Hotel_Reservations
 
         private void btnCreateNewHotel_Click(object sender, EventArgs e)
         {
+            // hotelID, date, number of days, customer ID, room type          
+            reserveRoom("0001", "20160905", 1, "00001", "KB");
+            reserveRoom("0001", "20160905", 4, "00002", "KB");
+            reserveRoom("0001", "20160905", 5, "00003", "KB");
+            reserveRoom("0001", "20160907", 3, "00004", "KB");
+            reserveRoom("0001", "20160909", 4, "00005", "KB");
+            reserveRoom("0001", "20160906", 5, "00006", "KB"); // fails - room not available
+            reserveRoom("0001", "20160905", 1, "00007", "QB");
+            reserveRoom("0001", "20160905", 1, "00008", "KB"); // fails- room not available
+            reserveRoom("0001", "20160905", 4, "00009", "QB");
+            reserveRoom("0001", "20170905", 1, "00010", "KB"); // fails- room not available
+            reserveRoom("0005", "20160915", 5, "00011", "QB");
+            reserveRoom("0005", "20160925", 10, "00012", "QB"); // fails- room not available
+            reserveRoom("0005", "20160907", 3, "00013", "QB");
+            reserveRoom("0005", "20160909", 3, "00014", "KB");
+            reserveRoom("0005", "20160905", 1, "00015", "AB"); // fails- unknown room type
+            reserveRoom("000999", "20160905", 1, "00016", "DB"); // fails- unknown hotel ID
 
+            String result = "";
+            this.hotelManager.writeToXML(out result, this.hotelManager.reservations, reservations_filePath);
+            lblStatus.Text = "Operation - " + result;
         }
 
         private void loadHotelsToolStripMenuItem_Click(object sender, EventArgs e)

@@ -308,88 +308,44 @@ namespace HotelsManagement
 
         public bool ReserveRoom(ReservationType reservation)
         {
-            /*
-            //Compare the amount of days requested against max rooms for that type
-            InventoryType inventory = this.inventory.Find(x => 
-                x.HotelId == reservation.hotelId && 
-                x.RoomType == reservation.roomType && 
-                x.Date == reservation.startDate);
 
-            if (inventory != null && reservation.numDays > inventory.Quantity)
+            List<String> dateList = CreateDateList(reservation.startDate, reservation.numDays);
+
+            foreach (String date1 in dateList)
             {
-                reservation.result = ReservationResultType.RoomNotAvailable;
-                return false;
-            }
-            */
-            //System.Console.Out.WriteLine(inventory.Quantity);
+                InventoryType inventory = this.inventory.Find(x =>
+                x.HotelId == reservation.hotelId &&
+                x.RoomType == reservation.roomType &&
+                x.Date == date1);
 
-            //Check if any days exceed the current month
-            List<String> dateList_2 = CreateDateList(reservation.startDate, reservation.numDays);
-
-            foreach (ReservationType _reservation in this.reservations)
-                foreach (String date2 in dateList_2)
+                //Make sure the inventory day exists
+                if (inventory != null)
                 {
-                    int month = Convert.ToInt32(date2.Substring(4, 2));
-                    //System.Console.Out.WriteLine("Month" + month);
-                }
 
-            //Loop through existing reservations
-            int reservation_count = this.reservations.Count;
+                    //Reduce the room count for each day
+                    inventory.Quantity--;
 
-            if (reservation_count > 0)
-            {
-                foreach(ReservationType _reservation in this.reservations)
-                {
-                    //Find any matching reservations
-                    if (_reservation.hotelId == reservation.hotelId
-                        && _reservation.roomType == reservation.roomType
-                        && _reservation.result == ReservationResultType.Success)
-                    {                       
-
-                        //Create a list of booked days by the reservation
-                        List<String> dateList_1 = CreateDateList(_reservation.startDate, _reservation.numDays);
-                        
-                        //Counter for any room date matches
-                        int matches = 0;
-
-                        //Compare the date lists for any date matches from the reservations 
-                        foreach (String date1 in dateList_1)
-                        {
-                            foreach (String date2 in dateList_2)
-                                if (date2 == date1) matches++;                              
-                        }
-
-                        
-                        if (matches > 0)
-                        {
-                            reservation.result = ReservationResultType.RoomNotAvailable;
-                            //System.Console.Out.WriteLine("Matches Found - " + matches);
-                            return false;
-                        }
-                        else
-                        {
-                            reservation.result = ReservationResultType.Success;
-                            return true;
-                        }
-
-                    }else
+                    //There are no more rooms, of that type, available on that day
+                    if (inventory.Quantity < 0)
                     {
-                        //No matching reservations. It's good to go.
-                        reservation.result = ReservationResultType.Success;
-                        return true;
+                        reservation.result = ReservationResultType.RoomNotAvailable;
+                        return false;
                     }
                 }
+                else
+                {
+                    //The inventory does not exist
+                    reservation.result = ReservationResultType.RoomNotAvailable;
+                    return false;
+                }
 
-                
-            }
-            else
-            {
-                //There are no reservations so just attempt to add it to the list;
-                reservation.result = ReservationResultType.Success;
-                return true;
             }
 
-            return false;
+            //Everything's good to go!
+            reservation.result = ReservationResultType.Success;
+
+            return true;
+            
         }
 
         //Credit - Kip Irvine
