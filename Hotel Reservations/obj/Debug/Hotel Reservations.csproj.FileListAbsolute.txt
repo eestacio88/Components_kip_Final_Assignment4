@@ -73,3 +73,15 @@ C:\Users\TerryJean\Documents\GitHub\HotelReservations_Kip_Components_3\Hotel Res
 C:\Users\TerryJean\Documents\HotelReservations_Kip_Components_3\Hotel Reservations\bin\Debug\Hotel Reservations.exe.config
 C:\Users\TerryJean\Documents\HotelReservations_Kip_Components_3\Hotel Reservations\obj\Debug\Hotel Reservations.exe
 C:\Users\TerryJean\Documents\HotelReservations_Kip_Components_3\Hotel Reservations\obj\Debug\Hotel Reservations.pdb
+C:\Users\Kikin\Desktop\COP4814 FALL2016\Components_kip_Final_Assignment4\Hotel Reservations\bin\Debug\Hotel Reservations.exe.config
+C:\Users\Kikin\Desktop\COP4814 FALL2016\Components_kip_Final_Assignment4\Hotel Reservations\obj\Debug\Hotel Reservations.exe
+C:\Users\Kikin\Desktop\COP4814 FALL2016\Components_kip_Final_Assignment4\Hotel Reservations\obj\Debug\Hotel Reservations.pdb
+C:\Users\Kikin\Desktop\COP4814 FALL2016\Components_kip_Final_Assignment4\Hotel Reservations\bin\Debug\Hotel Reservations.exe
+C:\Users\Kikin\Desktop\COP4814 FALL2016\Components_kip_Final_Assignment4\Hotel Reservations\bin\Debug\Hotel Reservations.pdb
+C:\Users\Kikin\Desktop\COP4814 FALL2016\Components_kip_Final_Assignment4\Hotel Reservations\bin\Debug\HotelsManagement.dll
+C:\Users\Kikin\Desktop\COP4814 FALL2016\Components_kip_Final_Assignment4\Hotel Reservations\bin\Debug\HotelsManagement.pdb
+C:\Users\Kikin\Desktop\COP4814 FALL2016\Components_kip_Final_Assignment4\Hotel Reservations\obj\Debug\Hotel Reservations.csprojResolveAssemblyReference.cache
+C:\Users\Kikin\Desktop\COP4814 FALL2016\Components_kip_Final_Assignment4\Hotel Reservations\obj\Debug\Hotel_Reservations.BrowserForm.resources
+C:\Users\Kikin\Desktop\COP4814 FALL2016\Components_kip_Final_Assignment4\Hotel Reservations\obj\Debug\Hotel_Reservations.CreateFilesForm.resources
+C:\Users\Kikin\Desktop\COP4814 FALL2016\Components_kip_Final_Assignment4\Hotel Reservations\obj\Debug\Hotel_Reservations.Properties.Resources.resources
+C:\Users\Kikin\Desktop\COP4814 FALL2016\Components_kip_Final_Assignment4\Hotel Reservations\obj\Debug\Hotel Reservations.csproj.GenerateResource.Cache

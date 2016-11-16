@@ -41,6 +41,18 @@ namespace Hotel_Reservations
             this.hotelManager = new HotelDataManager();
             this.hotelManager.generateHotels();
 
+            ListenerForm form;
+            form = new ListenerForm();
+            form.Show();
+            form = new ListenerForm();
+            form.Show();
+            form = new ListenerForm();
+            form.Show();
+            form = new ListenerForm();
+            form.Show();
+            form = new ListenerForm();
+            form.Show();
+
         }
 
         private void mnu_CreateHotel_Click(object sender, EventArgs e)
@@ -48,14 +60,14 @@ namespace Hotel_Reservations
             //Create the xml file
             String result = "";
             this.hotelManager.writeToXML(out result, this.hotelManager.hotels, hotels_filePath);
-            lblStatus.Text = "Hotel File - " + result;
+            //lblStatus.Text = "Hotel File - " + result;
         }
 
         private void mnu_CreateRoomInventory_Click(object sender, EventArgs e)
         {
 
             String result = this.hotelManager.generateRoomsInventory(hotels_filePath, inventories_filePath);
-            lblStatus.Text = "Inventory File - " + result;
+           // lblStatus.Text = "Inventory File - " + result;
 
         }
 
@@ -94,7 +106,7 @@ namespace Hotel_Reservations
             //this.hotelManager.reservations = new List<InventoryType>();
             //this.hotelManager.reservations = this.hotelManager.readFromXML(out result, this.hotelManager.reservations, inventories_filePath);
            
-            lblStatus.Text = result;
+            //lblStatus.Text = result;
         }
 
         private String reserveRoom(String hotelId, String date, int numOfDays, String customerId, String bedType)
@@ -226,10 +238,10 @@ namespace Hotel_Reservations
             }
             catch (Exception e)
             {
-                lblStatus.Text = "Operation - " + e.Message;
+                //lblStatus.Text = "Operation - " + e.Message;
             }
 
-            lblStatus.Text = "Operation - Success";
+            //lblStatus.Text = "Operation - Success";
             System.Console.Out.WriteLine("RESULT: " + result);
             return result;
         }
@@ -256,13 +268,13 @@ namespace Hotel_Reservations
 
             String result = "";
             this.hotelManager.writeToXML(out result, this.hotelManager.reservations, reservations_filePath);
-            lblStatus.Text = "Operation - " + result;
+            //lblStatus.Text = "Operation - " + result;
         }
 
         private void loadHotelsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             String result = this.hotelManager.generateHotelListItems(roomtypes_filePath, hotels_filePath, new_hotels_filePath);
-            lblStatus.Text = "Operation - " + result;
+            //lblStatus.Text = "Operation - " + result;
         }
 
         private void createNewHotelsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -277,13 +289,18 @@ namespace Hotel_Reservations
                 frm.URL = xsl_html_file_path;
                 frm.ShowDialog();
 
-                lblStatus.Text = "Operation - Successful!";
+                //lblStatus.Text = "Operation - Successful!";
             }
             catch (Exception err)
             {
-                lblStatus.Text = "Operation - " + err.Message;
+                //lblStatus.Text = "Operation - " + err.Message;
                 System.Console.Out.WriteLine(err.Message);
             }
+        }
+
+        private void CreateFilesForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
